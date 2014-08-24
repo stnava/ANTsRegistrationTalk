@@ -104,9 +104,9 @@ ITK+ANTs+R = ANTsR
 * Generic mathematical methods that are tunable for 
 application specific domains:  no-free lunch
 
-* ```
+```
     An algorithm must use prior knowledge about a problem 
-    to do well on that problem \s\s\s\s
+    to do well on that problem 
 ```
 
 # Registration:  Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
