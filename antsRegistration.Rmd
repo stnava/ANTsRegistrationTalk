@@ -75,6 +75,7 @@ $+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.s
 
 <div align="center"><img width="1433" src="./figures/sillyputty.png" frameborder="0"></img></div>
 
+plausible physical modeling of large, invertible deformations
 
 # Registration
 
