@@ -49,6 +49,8 @@ This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://st
 
 ![](./figures/appleorange3.png)
 
+this is an <span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> registration - i.e. registration on color
+
 ## Definitions
 
 * Registration $=$ geometric mapping between image pairs or image sets (e.g. Affine)
