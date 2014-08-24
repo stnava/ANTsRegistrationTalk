@@ -209,7 +209,8 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 * impacts scalability, memory, optimization accuracy, speed, robustness ...
 
-* doable, but needs investment in order to achieve "dream" registration scenario
+* could be done optimally *with massive improvements in performance*
+    * but needs investment in order to achieve "dream" registration scenario
 
 * important for new schemes that *elect* solutions from **anatomical or transformation** dictionaries
 
