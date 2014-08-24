@@ -232,7 +232,7 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 we provided the *standard* registration results for $>$ 20,000 image pairs at [SATA 2013](https://masi.vuse.vanderbilt.edu/workshop2013/index.php/MICCAI_2013_SATA_Challenge_and_Workshop:Current_events)
 
 
-# Differentiable maps with differentiable inverse $+$ *statistics in these spaces*
+# Differentiable maps with<br /> differentiable inverse <br />$+$ *statistics in these spaces*
 
 ## Brain templates as *high-dimensional averages*
 ![](./figures/speciestemplates.png)
