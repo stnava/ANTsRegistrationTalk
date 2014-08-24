@@ -180,14 +180,19 @@
 <p><img src="figures/towardsstandardmetric.png" /></p>
 <p><span class="math">\[ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{&lt; I, J &gt;}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}\]</span></p>
 <p><strong>all metrics</strong> may be computed from <strong>sparse</strong> or <strong>dense</strong> samples and used with low or high-dimensional transformations</p>
-</section><section id="the-optimization-function" class="slide level2">
-<h1>The optimization function</h1>
+</section><section id="the-optimization-problem" class="slide level2">
+<h1>The optimization problem</h1>
 <p>Find mapping <span class="math">\[ \color{red}{ \phi(x,p) \in \mathcal{T} }\]</span> such that</p>
 <p><span class="math">\[ \color{red}{ M(I,J,\phi(x,p)) } \]</span> is minimized</p>
 <p>Must select both metric <span class="math">\(\color{red}{M}\)</span> and transformation <span class="math">\(\color{red}{\mathcal{T}}\)</span></p>
 <p>… in addition to optimizer and the problem’s resolution</p>
 </section><section id="concatenating-transformation-metric-stages-are-necessary-in-real-data" class="slide level2">
 <h1>Concatenating transformation / metric stages are necessary in real data</h1>
+</section><section id="critical-to-optimization-of-such-problems-is-sampling-strategy" class="slide level2">
+<h1>Critical to optimization of such problems is <em>Sampling strategy</em></h1>
+<p>overall, relatively little translational work on this important problem in biomedical imaging</p>
+<p>impacts scalability, memory, optimization accuracy, speed, robustness …</p>
+<p>needs …</p>
 </section></section>
 <section><section id="registration-with-priors" class="titleslide slide level1"><h1>Registration with priors</h1></section><section id="prior-knowledge-about-how-to-map---e.g.lesion-brains" class="slide level2">
 <h1>prior knowledge about how to map - e.g. lesion brains</h1>
@@ -227,7 +232,7 @@
 <h1>coordinated multivariate statistical fields arise from this mapping</h1>
 <p><img src="figures/statisticalfields.png" alt="images at measurement fields" /></p>
 </section></section>
-<section><section id="analysis-philosophy-and-published-opinions" class="titleslide slide level1"><h1>Analysis philosophy and published opinions</h1></section><section id="what-is-and-is-not-image-registration" class="slide level2">
+<section><section id="analysis-philosophy-and-published-opinions" class="titleslide slide level1"><h1>Analysis philosophy and <br /> published opinions</h1></section><section id="what-is-and-is-not-image-registration" class="slide level2">
 <h1>What is and <em>is not</em> image registration</h1>
 <p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23116330"><em>not</em> registration</a></p>
 </section><section id="voodoo-in-voxel-based-analysis" class="slide level2">

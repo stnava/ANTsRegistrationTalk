@@ -157,7 +157,7 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 **all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
 
  
-## The optimization function
+## The optimization problem
 
 Find mapping $$ \color{red}{ \phi(x,p) \in \mathcal{T} }$$ such that
 
@@ -169,6 +169,14 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 
 ## Concatenating transformation / metric stages are necessary in real data
+
+## Critical to optimization of such problems is *Sampling strategy*
+
+overall, relatively little translational work on this important problem in biomedical imaging
+
+impacts scalability, memory, optimization accuracy, speed, robustness ...
+
+needs ...
 
 # Registration with priors 
 
@@ -217,7 +225,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 ![images at measurement fields](figures/statisticalfields.png)
 
 
-# Analysis philosophy and published opinions
+# Analysis philosophy and <br /> published opinions
 
 ## What is and *is not* image registration
 
