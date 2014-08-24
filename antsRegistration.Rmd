@@ -279,6 +279,8 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 ![images at measurement fields](figures/statisticalfields.png)
 
+*Many opportunities for statistical advancements*
+
 ## ITK+ANTs+R = <span style="color:red;">*ANTsR*</span>
 
 ## Agnostic statistics
