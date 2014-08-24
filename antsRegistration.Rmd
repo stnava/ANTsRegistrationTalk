@@ -172,16 +172,6 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 Images deform symmetrically along the shape manifold.  This eliminates bias in the
 measurement of image differences.
 
-## Minimizing interpolations
-![](./figures/oneInterpolation.png)
-
-$\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4$
-
-To avoid compounding interpolation error with the concatenation of transformations, *ANTs* never
-uses more than a single interpolation.
-
-We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as part of its V4 reboot!
-
 ## SyN Example
 
 <!-- syn example -->
@@ -189,8 +179,6 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 <div align="center"><iframe width="560" height="315" src="http://www.youtube.com/embed/3I9RcRtpOvw" frameborder="0" allowfullscreen></iframe></div>
 
 [SyN movie](http://www.youtube.com/embed/3I9RcRtpOvw)
-
-
 
 
 ## Concatenated transformation / metric stages are necessary in real data
@@ -204,6 +192,16 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 4.  Output the *composite transform* $A \circ R$ as a matrix transformation and $\phi$ and $\phi^{-1}$ as deformation fields.
 
 standard in [recommended](http://stnava.github.io/ANTsDoc/) `antsRegistration` application scripts 
+
+## Minimizing interpolations
+![](./figures/oneInterpolation.png)
+
+$\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4$
+
+To avoid compounding interpolation error with the concatenation of transformations, *ANTs* never
+uses more than a single interpolation.
+
+We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as part of its V4 reboot!
 
 ## Optimizing registration benefits from *optimal sampling strategy*
 

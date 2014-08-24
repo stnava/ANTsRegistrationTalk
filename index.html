@@ -189,12 +189,6 @@
 </section><section id="syn-for-optimization-symmetry" class="slide level2">
 <h1>SyN for optimization symmetry</h1>
 <p><img src="figures/fishSyN.png" /> Images deform symmetrically along the shape manifold. This eliminates bias in the measurement of image differences.</p>
-</section><section id="minimizing-interpolations" class="slide level2">
-<h1>Minimizing interpolations</h1>
-<p><img src="figures/oneInterpolation.png" /></p>
-<p><span class="math">\(\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4\)</span></p>
-<p>To avoid compounding interpolation error with the concatenation of transformations, <em>ANTs</em> never uses more than a single interpolation.</p>
-<p>We ported many of these ideas into the <a href="http://www.itk.org">Insight ToolKit</a> as part of its V4 reboot!</p>
 </section><section id="syn-example" class="slide level2">
 <h1>SyN Example</h1>
 <!-- syn example -->
@@ -212,6 +206,12 @@
 <li class="fragment"><p>Output the <em>composite transform</em> <span class="math">\(A \circ R\)</span> as a matrix transformation and <span class="math">\(\phi\)</span> and <span class="math">\(\phi^{-1}\)</span> as deformation fields.</p></li>
 </ol>
 <p>standard in <a href="http://stnava.github.io/ANTsDoc/">recommended</a> <code>antsRegistration</code> application scripts</p>
+</section><section id="minimizing-interpolations" class="slide level2">
+<h1>Minimizing interpolations</h1>
+<p><img src="figures/oneInterpolation.png" /></p>
+<p><span class="math">\(\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4\)</span></p>
+<p>To avoid compounding interpolation error with the concatenation of transformations, <em>ANTs</em> never uses more than a single interpolation.</p>
+<p>We ported many of these ideas into the <a href="http://www.itk.org">Insight ToolKit</a> as part of its V4 reboot!</p>
 </section><section id="optimizing-registration-benefits-from-optimal-sampling-strategy" class="slide level2">
 <h1>Optimizing registration benefits from <em>optimal sampling strategy</em></h1>
 <ul>
