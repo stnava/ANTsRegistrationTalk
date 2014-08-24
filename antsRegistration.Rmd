@@ -55,6 +55,20 @@ initialization
 
 <span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> deformable registration - i.e. registration on color
 
+# *ANTs* optimizes mathematically well-defined <span style="color:red;">objective functions</span> guided by <span style="color:red;">prior knowledge</span>  ...
+
+# plug *your ideas* into our software: <br /> <span style="color:blue;"> <span style="color:red;">innovation, insight</span> from biomedical data</span> ...
+
+# 
+
+![](figures/bant.png)
+
+# collaborators
+
+![](figures/antscollab.jpg)
+
+# Registration
+
 ## Definitions
 
 * Registration $=$ geometric mapping between image pairs or image sets (e.g. Affine)
@@ -69,10 +83,6 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 * Multiple modality $=$ using many modalities at once (e.g. DTI and T1 and BOLD)
 
 * <span style="color:grey;"> Dimensionality reduction $=$ principled way of finding few variables to represent many variables (e.g. PCA, CCA) </span>
-
-# *ANTs* optimizes mathematically well-defined <span style="color:red;">objective functions</span> guided by <span style="color:red;">prior knowledge</span>  ...
-
-# plug *your ideas* into our software: <br /> <span style="color:blue;"> <span style="color:red;">innovation, insight</span> from biomedical data</span> ...
 
  
 # Registration with priors 
