@@ -277,6 +277,8 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 # ANTs versus Freesurfer:<br />  Quantifying *life span* brain health
 
+## ANTs versus Freesurfer:<br />  Quantifying *life span* brain health
+
 * Freesurfer is the historial standard for measuring cortical thickness
 
 * instead of using surfaces, we use the image space *DiReCTly*
