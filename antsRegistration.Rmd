@@ -61,11 +61,11 @@ initialization
 
 # BA & NT
 
-![](figures/bant.png)
+![](./figures/bant.png)
 
 # collaborators
 
-![](figures/antscollab.jpg)
+![](./figures/antscollab.jpg)
 
 # Registration
 
