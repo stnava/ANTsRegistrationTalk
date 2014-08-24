@@ -172,9 +172,9 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 1.  Start with a *rigid transformation*:  $I \approx J(R(x))$ s.t. negative $MI(I,J,R)$ is minimized
 
-2.  Follow by an *affine transformation*:  $I \approx J(A(R(x)))$ s.t. negative $MI(I,J,A \circ R)$ is minimized
+2.  Follow by an *affine transformation*:  $I \approx J(A(R(x)))$ s.t. negative $MI(I,J,A \circ R)$ is minimized with fixed $R$
 
-3.  Finally, a *diffeomorphism*:  $I \approx J(\phi(A(R(x))))$ s.t. $k$-neighborhood correlation $CC_k(I,J,A \circ R)$ is minimized
+3.  Finally, a *diffeomorphism*:  $I \approx J(\phi(A(R(x))))$ s.t. $k$-neighborhood correlation $CC_k(I,J,A \circ R)$ is minimized with fixed $R, A$
 
 
 ## Optimizing registration benefits from *optimal sampling strategy*
