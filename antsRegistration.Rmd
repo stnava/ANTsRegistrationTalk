@@ -226,7 +226,11 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 ## Sampling & feature selection: Satellite imagery
 
+FIXME
+
 ## Sampling & feature selection: Lesioned brains
+
+FIXME
 
 # Evaluation results
 
@@ -271,7 +275,17 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 [congress](http://ntustison.github.io/CongressionalFaceTemplates/)
 
-# ANTs versus Freesurfer 
+# ANTs versus Freesurfer:<br />  Quantifying *life span* brain health
+
+* Freesurfer is the historial standard for measuring cortical thickness
+
+* instead of using surfaces, we use the image space *DiReCTly*
+
+* [see this section of a different talk](http://stnava.github.io/ANTsTalk/#/putting-it-all-together-can-we-quantify-life-span-brain-health-in-individuals-and-in-populations) 
+
+* and [this paper](http://www.ncbi.nlm.nih.gov/pubmed/24879923)
+
+* hint: we "win"
 
 # Registration & statistics:<br /> Frontiers and innovation
 
