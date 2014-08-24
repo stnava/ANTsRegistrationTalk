@@ -216,6 +216,10 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 * overall, relatively little translational work on this important problem in biomedical imaging
 
+## Sampling & feature selection: Satellite imagery
+
+## Sampling & feature selection: Lesioned brains
+
 # Evaluation results
 
 ## 
@@ -259,40 +263,120 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 [congress](http://ntustison.github.io/CongressionalFaceTemplates/)
 
-
-# Registration with priors 
-
-
-## prior knowledge about how to map - e.g. lesion brains
-
-> a test 
->> is the best
-
-
-## we need to deform ( but not the lesion )
-
-## with landmarks ... two metrics 
-
 # ANTs versus Freesurfer 
 
-# ANTs statistics: *ANTsR* 
+# Registration & statistics: Frontiers and innovation
 
-## ANTsR code example 
-
-## PTBP 
-
-## BRATS competition
-
-## ANTsR: EANAT 
-
-## ANTsR: SCCAN 
-
-
-# Registration: Frontiers and Innovation
-
-## coordinated multivariate statistical fields arise from this mapping
+## multivariate statistical fields arise from fused modalities
 
 ![images at measurement fields](figures/statisticalfields.png)
+
+## ITK+ANTs+R = <span style="color:red;">*ANTsR*</span>
+
+## Agnostic statistics
+![](./figures/antsrex.jpg)
+
+[McMillan et al.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3961542/)
+
+## A Quick <span style="color:grey;">*ANTsR*</span> example
+```{r loadantsr,results='hide',echo=FALSE,message=FALSE}
+library(ANTsR)
+```
+
+This is an executable *ANTsR* code block - *N*-dimensional statistics to go with 
+our *N*-dimensional image processing software!
+```{r loadimages,message=FALSE,warning=FALSE,results='hide'}
+library(ANTsR)
+dim<-2
+filename<-getANTsRData('r16')
+img<-antsImageRead( filename , dim )
+filename<-getANTsRData('r64')
+img2<-antsImageRead( filename , dim )
+mask<-getMask(img,150,255,T)
+nvox<-sum( mask == 1 )
+```
+The brain has `r nvox` voxels ...
+
+## A Quick <span style="color:grey;">*ANTsR*</span> example
+
+Simulate a population morphometry study - a "VBM" ...
+```{r morph,results='hide'}
+simnum<-10
+imglist<-list()
+imglist2<-list()
+for ( i in 1:simnum ) {
+  img1sim<-antsImageClone(img)
+  img1sim[ mask==1 ]<-rnorm(nvox,mean=0.205)
+  SmoothImage(dim,img1sim,1.5,img1sim)
+  img2sim<-antsImageClone(img2)
+  img2sim[ mask==1 ]<-rnorm(nvox,mean=0.20)
+  SmoothImage(dim,img2sim,1.5,img2sim)
+  imglist<-lappend(imglist,img1sim)
+  imglist2<-lappend(imglist2,img2sim)
+}
+imglist<-lappend( imglist, imglist2 )
+mat<-imageListToMatrix( imglist, mask )
+DX<-factor( c( rep(0,simnum), rep(1,simnum) ) )
+mylmresults<-bigLMStats( lm( mat ~ DX ) )
+qvals<-p.adjust( mylmresults$pval.model ) 
+```
+The minimum q-value is `r min(qvals)` ... 
+
+## Visualize the histograms of effects
+```{r vizmorph,results='hide'}
+whichvox<-qvals < 1.e-8
+voxdf<-data.frame( volume=c( as.numeric( mat[,whichvox] ) ), DX=DX )
+ggplot(voxdf, aes(volume, fill = DX)) + geom_density(alpha = 0.2)
+```
+
+## Visualize the anatomical distribution
+```{r vizmorph2hide,results='hide',echo=FALSE}
+betas<-antsImageClone(mask)
+betavec<-abs(mylmresults$beta.t[1,])
+betas[mask==1]<-betavec
+thresh<-paste(mean(betavec),'x',max(betavec),sep='')
+ofn<-paste(figpath,'vizmorph2.jpg',sep='')
+```
+
+```{r vizmorph2,results='hide'}
+plotANTsImage(img,functional=list(betas),threshold=thresh,
+  outname=ofn)
+```
+
+![](`r ofn`)
+
+## The power of *ANTs* $+$ *R* $\rightarrow$<br /> <span style="color:red;">**Reproducible imaging science**</span> 
+
+![](./figures/antsgoals.png)
+
+... used in ["Sparse canonical correlation analysis relates network-level atrophy to multivariate cognitive measures in a neurodegenerative population"](http://www.ncbi.nlm.nih.gov/pubmed/24096125) and several upcoming ...
+
+## Can we customize these methods for a challenging multivariate segmentation problem with clinical relevance?
+
+## Automated tumor segmentation from multiple MRI
+![](./figures/tumorsegmentation.png)
+
+## General theory tunable to specific domains:  *no-free lunch*
+![](./figures/brats.png)
+
+[BRATS 2013 Challenge](http://hal.inria.fr/docs/00/93/56/40/PDF/brats_preprint.pdf) **won** with [*ANTsR*](https://github.com/stnava/ANTsR)
+
+## Can we address subtle questions in brain and cognition via imaging-specific dimensionality reduction?
+
+##  [Eigenanatomy](http://www.ncbi.nlm.nih.gov/pubmed/24852460) & [SCCAN](http://www.ncbi.nlm.nih.gov/pubmed/?term=avants+SCCAN)
+
+## ANTs*R* $\rightarrow$ new insight via quantification
+
+Good software should fade into the background ... however ...
+
+<span style="color:red;">
+ As is common in science, the first big breakthrough in our understanding ...
+ [came from] an improvement in measurement.
+</span>
+
+<span style="color:blue;">
+> Daniel Kahnemann, *Thinking, Fast and Slow* (2011)
+</span>
 
 
 # Analysis philosophy and <br /> published opinions
