@@ -37,15 +37,15 @@ output:
 
 This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://stnava.github.io/ANTsRegistrationTalk/) with colored [links](http://stnava.github.io/ANTsRegistrationTalk/) meant to be clicked for more information
 
-## we can compare apples and oranges ...
+## we can compare apples and oranges ... 1
 
 ![](./figures/appleorange1.png)
 
-## we can compare apples and oranges ...
+## we can compare apples and oranges ... 2
 
 ![](./figures/appleorange2.png)
 
-## we can compare apples and oranges ...
+## we can compare apples and oranges ... 3
 
 ![](./figures/appleorange3.png)
 
