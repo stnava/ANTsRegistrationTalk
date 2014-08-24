@@ -212,18 +212,43 @@
 <p><span class="math">\(\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4\)</span></p>
 <p>To avoid compounding interpolation error with the concatenation of transformations, <em>ANTs</em> never uses more than a single interpolation.</p>
 <p>We ported many of these ideas into the <a href="http://www.itk.org">Insight ToolKit</a> as part of its V4 reboot!</p>
-</section><section id="optimizing-registration-benefits-from-optimal-sampling-strategy" class="slide level2">
-<h1>Optimizing registration benefits from <em>optimal sampling strategy</em></h1>
+</section><section id="registration-benefits-from-optimal-sampling-strategy" class="slide level2">
+<h1>Registration benefits from <em>optimal sampling strategy</em></h1>
 <ul>
 <li class="fragment"><p>sampling for <em>both</em> the metric and the transformation</p></li>
-<li class="fragment"><p>overall, relatively little translational work on this important problem in biomedical imaging</p></li>
 <li class="fragment"><p>impacts scalability, memory, optimization accuracy, speed, robustness …</p></li>
 <li class="fragment"><p>doable, but needs investment in order to achieve “dream” registration scenario</p></li>
 <li class="fragment"><p>important for new schemes that <em>elect</em> solutions from <strong>anatomical or transformation</strong> dictionaries</p></li>
+<li class="fragment"><p>overall, relatively little translational work on this important problem in biomedical imaging</p></li>
 </ul>
-</section><section id="electing-anatomical-labels" class="slide level2">
-<h1>Electing anatomical labels</h1>
+</section></section>
+<section><section id="evaluation-results" class="titleslide slide level1"><h1>Evaluation results</h1></section><section id="section-1" class="slide level2">
+<h1></h1>
+<p><img src="figures/evalhistory.png" /></p>
+</section><section id="sata-electing-anatomical-labels" class="slide level2">
+<h1>SATA: Electing anatomical labels</h1>
 <p><img src="figures/sata2013.jpg" /></p>
+</section><section id="section-2" class="slide level2">
+<h1></h1>
+<p><img src="figures/sata2013.png" /></p>
+<p>we provided the <em>standard</em> registration results for <span class="math">\(&gt;\)</span> 20,000 image pairs at <a href="https://masi.vuse.vanderbilt.edu/workshop2013/index.php/MICCAI_2013_SATA_Challenge_and_Workshop:Current_events">SATA 2013</a></p>
+</section></section>
+<section><section id="differentiable-maps-with-differentiable-inverse-statistics-in-these-spaces" class="titleslide slide level1"><h1>Differentiable maps with differentiable inverse <span class="math">\(+\)</span> <em>statistics in these spaces</em></h1></section><section id="brain-templates-as-high-dimensional-averages" class="slide level2">
+<h1>Brain templates as <em>high-dimensional averages</em></h1>
+<p><img src="figures/speciestemplates.png" /></p>
+</section><section id="sygn---templates-and-averages-in-deformation-space" class="slide level2">
+<h1>SyGN - templates and averages in deformation space</h1>
+<p><img src="figures/normvsnorm.png" /> from <a href="http://miykael.github.io/nipype-beginner-s-guide/ANTS.html">miykael</a></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/15501083">geodesic image averages</a></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/19818860">optimal templates 2</a></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23284904">canine template</a></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23516289">chimpanzees</a></p>
+</section><section id="average-republican-and-democratic-congressmen" class="slide level2">
+<h1>Average Republican and Democratic congressmen</h1>
+<div align="center">
+<img src="figures/democrat_left_repub_right.png" frameborder="0"></img>
+</div>
+<p><a href="http://ntustison.github.io/CongressionalFaceTemplates/">congress</a></p>
 </section></section>
 <section><section id="registration-with-priors" class="titleslide slide level1"><h1>Registration with priors</h1></section><section id="prior-knowledge-about-how-to-map---e.g.lesion-brains" class="slide level2">
 <h1>prior knowledge about how to map - e.g. lesion brains</h1>

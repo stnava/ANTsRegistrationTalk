@@ -203,11 +203,9 @@ uses more than a single interpolation.
 
 We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as part of its V4 reboot!
 
-## Optimizing registration benefits from *optimal sampling strategy*
+## Registration benefits from *optimal sampling strategy*
 
 * sampling for *both* the metric and the transformation
-
-* overall, relatively little translational work on this important problem in biomedical imaging
 
 * impacts scalability, memory, optimization accuracy, speed, robustness ...
 
@@ -215,8 +213,49 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 * important for new schemes that *elect* solutions from **anatomical or transformation** dictionaries
 
-## Electing anatomical labels 
+* overall, relatively little translational work on this important problem in biomedical imaging
+
+# Evaluation results
+
+## 
+![](./figures/evalhistory.png)
+
+
+## SATA: Electing anatomical labels 
 ![](./figures/sata2013.jpg)
+
+
+## 
+![](./figures/sata2013.png)
+
+we provided the *standard* registration results for $>$ 20,000 image pairs at [SATA 2013](https://masi.vuse.vanderbilt.edu/workshop2013/index.php/MICCAI_2013_SATA_Challenge_and_Workshop:Current_events)
+
+
+# Differentiable maps with differentiable inverse $+$ *statistics in these spaces*
+
+## Brain templates as *high-dimensional averages*
+![](./figures/speciestemplates.png)
+
+## SyGN - templates and averages in deformation space
+
+![](figures/normvsnorm.png)
+from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
+
+[geodesic image averages](http://www.ncbi.nlm.nih.gov/pubmed/15501083)
+
+[optimal templates 2](http://www.ncbi.nlm.nih.gov/pubmed/19818860)
+
+[canine template](http://www.ncbi.nlm.nih.gov/pubmed/23284904)
+
+[chimpanzees](http://www.ncbi.nlm.nih.gov/pubmed/23516289)
+
+
+## Average Republican and Democratic congressmen
+
+<div align="center"><img src="figures/democrat_left_repub_right.png" frameborder="0"></img></div>
+
+[congress](http://ntustison.github.io/CongressionalFaceTemplates/)
+
 
 # Registration with priors 
 
