@@ -77,6 +77,8 @@ $+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.s
 
 plausible physical modeling of large, invertible deformations
 
+"differentiable map with differentiable inverse"
+
 # Registration
 
 ## Definitions
