@@ -64,6 +64,14 @@ initialization
 
 ![](./figures/lineage.jpg)
 
+## Diffeomorphisms
+
+<div align="center"><img width="1433" src="./figures/sillyputty.png" frameborder="0"></img></div>
+
+plausible physical modeling of large, invertible deformations
+
+"differentiable map with differentiable inverse"
+
 ## ANTs: Beyond Registration
 
 ![](./figures/antscapabilities.jpg)
@@ -85,13 +93,6 @@ but *this talk* focuses on the core registration functionality that is critical 
 
 $+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.slicer.org/), [brainsfit](https://github.com/BRAINSia/BRAINSTools), [nipype](http://nipy.sourceforge.net/nipype/), [itk](http://www.itk.org) and more ...
 
-## Diffeomorphisms
-
-<div align="center"><img width="1433" src="./figures/sillyputty.png" frameborder="0"></img></div>
-
-plausible physical modeling of large, invertible deformations
-
-"differentiable map with differentiable inverse"
 
 # Registration
 
