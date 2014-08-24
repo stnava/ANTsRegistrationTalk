@@ -180,7 +180,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 * doable, but needs investment in order to achieve "dream" registration scenario
 
-* important for new schemes that *voting* for combining **anatomical or transformation** dictionaries
+* important for new schemes that *elect* solutions from **anatomical or transformation** dictionaries
 
 # Registration with priors 
 
