@@ -215,11 +215,11 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 * important for new schemes that *elect* solutions from **anatomical or transformation** dictionaries
 
+## Electing anatomical labels for new data
+![](./figures/sata2013.jpg)
+
 # Registration with priors 
 
-
-## ANTs Nomenclature / Standards 
-![](./figures/sata2013.jpg)
 
 ## prior knowledge about how to map - e.g. lesion brains
 
