@@ -172,7 +172,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 Images deform symmetrically along the shape manifold.  This eliminates bias in the
 measurement of image differences.
 
-## SyN Example
+##  [SyN (link)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2276735/) Example
 
 <!-- syn example -->
 
