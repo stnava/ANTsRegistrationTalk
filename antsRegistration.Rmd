@@ -176,7 +176,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 * impacts scalability, memory, optimization accuracy, speed, robustness ...
 
-* doable, but needs investment in order to achieve "dream" registration applications
+* doable, but needs investment in order to achieve "dream" registration scenario
 
 # Registration with priors 
 
