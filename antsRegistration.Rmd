@@ -71,6 +71,11 @@ initialization
 
 $+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.slicer.org/), [brainsfit](https://github.com/BRAINSia/BRAINSTools), [nipype](http://nipy.sourceforge.net/nipype/), [itk](http://www.itk.org) and more ...
 
+## Diffeomorphisms
+
+<div align="center"><img width="1433" src="./figures/sillyputty.png" frameborder="0"></img></div>
+
+
 # Registration
 
 ## Definitions
