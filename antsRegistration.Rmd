@@ -168,7 +168,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 ... in addition to optimizer and the problem's resolution
 
 
-## Concatenating transformation / metric stages are necessary in real data
+## Concatenated transformation / metric stages are necessary in real data
 
 ## Optimizing registration benefits from *optimal sampling strategy*
 
