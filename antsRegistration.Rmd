@@ -172,11 +172,11 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 ## Critical to optimization of such problems is *Sampling strategy*
 
-overall, relatively little translational work on this important problem in biomedical imaging
+* overall, relatively little translational work on this important problem in biomedical imaging
 
-impacts scalability, memory, optimization accuracy, speed, robustness ...
+* impacts scalability, memory, optimization accuracy, speed, robustness ...
 
-needs ...
+* doable, but needs investment in order to achieve "dream" registration applications
 
 # Registration with priors 
 
