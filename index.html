@@ -186,6 +186,23 @@
 <p><span class="math">\[ \color{red}{ M(I,J,\phi(x,p)) } \]</span> is minimized</p>
 <p>Must select both metric <span class="math">\(\color{red}{M}\)</span> and transformation <span class="math">\(\color{red}{\mathcal{T}}\)</span></p>
 <p>… in addition to optimizer and the problem’s resolution</p>
+</section><section id="syn-for-optimization-symmetry" class="slide level2">
+<h1>SyN for optimization symmetry</h1>
+<p><img src="figures/fishSyN.png" /> Images deform symmetrically along the shape manifold. This eliminates bias in the measurement of image differences.</p>
+</section><section id="minimizing-interpolations" class="slide level2">
+<h1>Minimizing interpolations</h1>
+<p><img src="figures/oneInterpolation.png" /></p>
+<p><span class="math">\(\mathcal{T}_{total} = \mathcal{T}_1 \circ \mathcal{T}_2 \circ \mathcal{T}_3 \circ \mathcal{T}_4\)</span></p>
+<p>To avoid compounding interpolation error with the concatenation of transformations, <em>ANTs</em> never uses more than a single interpolation.</p>
+<p>We ported many of these ideas into the <a href="http://www.itk.org">Insight ToolKit</a> as part of its V4 reboot!</p>
+</section><section id="syn-example" class="slide level2">
+<h1>SyN Example</h1>
+<!-- syn example -->
+<div align="center">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3I9RcRtpOvw" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<p><a href="http://www.youtube.com/embed/3I9RcRtpOvw">SyN movie</a></p>
 </section><section id="concatenated-transformation-metric-stages-are-necessary-in-real-data" class="slide level2">
 <h1>Concatenated transformation / metric stages are necessary in real data</h1>
 <ol type="1">
