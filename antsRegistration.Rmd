@@ -109,6 +109,22 @@ application specific domains:  no-free lunch
 
 # Registration:  Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
 
+## Definitions
+
+* Registration $=$ estimate an "optimal" geometric mapping between image pairs or image sets (e.g. Affine)
+
+* Similarity $=$ a function relating one image to another, given a transformation
+
+* <span style="color:grey;">
+Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly putty", viscous fluid)  </span>
+
+* Segmentation $=$ labeling tissue or anatomy in images, usually automated (e.g. K-means)
+
+* <span style="color:grey;"> Multivariate $=$ using many voxels or measurements at once (e.g. PCA, $p >> n$ ridge regression)</span>
+
+* Multiple modality $=$ using many modalities at once (e.g. DTI and T1 and BOLD)
+
+
 ## The Technical Framework
 
 ![](./figures/designprinciples.png)
@@ -121,20 +137,6 @@ application specific domains:  no-free lunch
 $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
 
 **all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
-
-
-## Definitions
-
-* Registration $=$ estimate an "optimal" geometric mapping between image pairs or image sets (e.g. Affine)
-
-* <span style="color:grey;">
-Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly putty", viscous fluid)  </span>
-
-* Segmentation $=$ labeling tissue or anatomy in images, usually automated (e.g. K-means)
-
-* <span style="color:grey;"> Multivariate $=$ using many voxels or measurements at once (e.g. PCA, $p >> n$ ridge regression)</span>
-
-* Multiple modality $=$ using many modalities at once (e.g. DTI and T1 and BOLD)
 
 
 ## ANTs Nomenclature / Standards 

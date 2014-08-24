@@ -141,7 +141,17 @@
 <pre><code>    An algorithm must use prior knowledge about a problem 
     to do well on that problem </code></pre>
 </section></section>
-<section><section id="registration-fundamental-tool-for-morphometry-segmentation-motion-estimation-and-data-cleaning" class="titleslide slide level1"><h1>Registration: Fundamental tool for morphometry, segmentation, motion estimation and data cleaning</h1></section><section id="the-technical-framework" class="slide level2">
+<section><section id="registration-fundamental-tool-for-morphometry-segmentation-motion-estimation-and-data-cleaning" class="titleslide slide level1"><h1>Registration: Fundamental tool for morphometry, segmentation, motion estimation and data cleaning</h1></section><section id="definitions" class="slide level2">
+<h1>Definitions</h1>
+<ul>
+<li class="fragment"><p>Registration <span class="math">\(=\)</span> estimate an “optimal” geometric mapping between image pairs or image sets (e.g. Affine)</p></li>
+<li class="fragment"><p>Similarity <span class="math">\(=\)</span> a function relating one image to another, given a transformation</p></li>
+<li class="fragment"><p><span style="color:grey;"> Diffeomorphisms <span class="math">\(=\)</span> differentiable map with differentiable inverse (e.g. “silly putty”, viscous fluid) </span></p></li>
+<li class="fragment"><p>Segmentation <span class="math">\(=\)</span> labeling tissue or anatomy in images, usually automated (e.g. K-means)</p></li>
+<li class="fragment"><p><span style="color:grey;"> Multivariate <span class="math">\(=\)</span> using many voxels or measurements at once (e.g. PCA, <span class="math">\(p &gt;&gt; n\)</span> ridge regression)</span></p></li>
+<li class="fragment"><p>Multiple modality <span class="math">\(=\)</span> using many modalities at once (e.g. DTI and T1 and BOLD)</p></li>
+</ul>
+</section><section id="the-technical-framework" class="slide level2">
 <h1>The Technical Framework</h1>
 <p><img src="figures/designprinciples.png" /></p>
 </section><section id="the-a-team-of-similarity-metrics" class="slide level2">
@@ -149,15 +159,6 @@
 <p><img src="figures/towardsstandardmetric.png" /></p>
 <p><span class="math">\[ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{&lt; I, J &gt;}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}\]</span></p>
 <p><strong>all metrics</strong> may be computed from <strong>sparse</strong> or <strong>dense</strong> samples and used with low or high-dimensional transformations</p>
-</section><section id="definitions" class="slide level2">
-<h1>Definitions</h1>
-<ul>
-<li class="fragment"><p>Registration <span class="math">\(=\)</span> estimate an “optimal” geometric mapping between image pairs or image sets (e.g. Affine)</p></li>
-<li class="fragment"><p><span style="color:grey;"> Diffeomorphisms <span class="math">\(=\)</span> differentiable map with differentiable inverse (e.g. “silly putty”, viscous fluid) </span></p></li>
-<li class="fragment"><p>Segmentation <span class="math">\(=\)</span> labeling tissue or anatomy in images, usually automated (e.g. K-means)</p></li>
-<li class="fragment"><p><span style="color:grey;"> Multivariate <span class="math">\(=\)</span> using many voxels or measurements at once (e.g. PCA, <span class="math">\(p &gt;&gt; n\)</span> ridge regression)</span></p></li>
-<li class="fragment"><p>Multiple modality <span class="math">\(=\)</span> using many modalities at once (e.g. DTI and T1 and BOLD)</p></li>
-</ul>
 </section><section id="ants-nomenclature-standards" class="slide level2">
 <h1>ANTs Nomenclature / Standards</h1>
 <p><img src="figures/antsnomen1.jpg" /></p>
