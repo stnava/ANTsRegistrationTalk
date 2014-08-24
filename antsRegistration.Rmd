@@ -83,7 +83,7 @@ plausible physical modeling of large, invertible deformations
 
 ## Definitions
 
-* Registration $=$ geometric mapping between image pairs or image sets (e.g. Affine)
+* Registration $=$ estimate an "optimal" geometric mapping between image pairs or image sets (e.g. Affine)
 
 * <span style="color:grey;">
 Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly putty", viscous fluid)  </span>
@@ -93,8 +93,6 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 * <span style="color:grey;"> Multivariate $=$ using many voxels or measurements at once (e.g. PCA, $p >> n$ ridge regression)</span>
 
 * Multiple modality $=$ using many modalities at once (e.g. DTI and T1 and BOLD)
-
-* <span style="color:grey;"> Dimensionality reduction $=$ principled way of finding few variables to represent many variables (e.g. PCA, CCA) </span>
 
  
 # Registration with priors 
