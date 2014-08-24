@@ -59,7 +59,7 @@ initialization
 
 # plug *your ideas* into our software: <br /> <span style="color:blue;"> <span style="color:red;">innovation, insight</span> from biomedical data</span> ...
 
-# 
+# BA & NT
 
 ![](figures/bant.png)
 
