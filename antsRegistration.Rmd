@@ -176,6 +176,7 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 3.  Finally, a *diffeomorphism*:  $I \approx J(\phi(A(R(x))))$ s.t. $k$-neighborhood correlation $CC_k(I,J,A \circ R)$ is minimized with fixed $R, A$
 
+this is standard in [recommended](http://stnava.github.io/ANTsDoc/) `antsRegistration` application scripts 
 
 ## Optimizing registration benefits from *optimal sampling strategy*
 
