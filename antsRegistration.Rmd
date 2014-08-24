@@ -61,7 +61,7 @@ initialization
 
 ## Founding developers
 
-<div align="center"><img height="700" src="./figures/bant.png" frameborder="0"></img></div>
+<div align="center"><img height="700" img width="1433" src="./figures/bant.png" frameborder="0"></img></div>
 
 
 ## Long-term collaborators
