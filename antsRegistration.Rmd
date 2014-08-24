@@ -41,15 +41,19 @@ This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://st
 
 ![](./figures/appleorange1.png)
 
+initialization
+
 ## we can compare apples and oranges ... 
 
 ![](./figures/appleorange2.png)
+
+<span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> affine
 
 ## we can compare apples and oranges ... 
 
 ![](./figures/appleorange3.png)
 
-this is an <span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> registration - i.e. registration on color
+<span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> deformable registration - i.e. registration on color
 
 ## Definitions
 
