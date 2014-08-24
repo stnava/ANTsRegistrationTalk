@@ -61,7 +61,8 @@ initialization
 
 ## Founding developers
 
-![](./figures/bant.png)
+<div align="center"><img height="300" src="./figures/bant.png" frameborder="0"></img></div>
+
 
 ## Long-term collaborators
 
