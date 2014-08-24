@@ -113,7 +113,7 @@ application specific domains:  no-free lunch
 
 ![](./figures/towardsstandardmetric.png)
 
-$$ \| I - J \| ~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
+$$ \| I - J \| ~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
 
 ## Definitions
 
