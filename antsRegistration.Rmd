@@ -112,7 +112,7 @@ application specific domains:  no-free lunch
     to do well on that problem 
 ```
 
-# <span style="color:red;">Medical Image Registration</span> <br /> Fundamental tool for morphometry, segmentation, motion estimation and <br /> <span style="color:blue;">data cleaning</span>
+# <span style="color:red;">Medical Image Registration</span> <br /> Fundamental tool for morphometry, segmentation,<br /> motion estimation and <br /> <span style="color:blue;">data cleaning</span>
 
 ## Definitions
 
