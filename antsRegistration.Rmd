@@ -163,7 +163,7 @@ Find mapping $$ \color{red}{ \phi(x,p) \in \mathcal{T} }$$ such that
 
 $$ \color{red}{ M(I,J,\phi(x,p)) } $$ is minimized
 
-Must select both metric $\color{red}{M}$ and transformation $$\color{red}{\mathcal{T}}$
+Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathcal{T}}$
 
 ... in addition to optimizer and the problem's resolution
 
