@@ -39,6 +39,14 @@ This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://st
 
 ## we can compare apples and oranges ...
 
+![](./figures/appleorange1.png)
+## we can compare apples and oranges ...
+
+![](./figures/appleorange2.png)
+## we can compare apples and oranges ...
+
+![](./figures/appleorange3.png)
+
 ## Definitions
 
 * Registration $=$ geometric mapping between image pairs or image sets (e.g. Affine)
