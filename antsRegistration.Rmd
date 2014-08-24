@@ -93,11 +93,8 @@ but *this talk* focuses on the core registration functionality that is critical 
 
 $+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.slicer.org/), [brainsfit](https://github.com/BRAINSia/BRAINSTools), [nipype](http://nipy.sourceforge.net/nipype/), [itk](http://www.itk.org) and more ...
 
-## Technical details
-
-* Provide a general purpose library of multivariate image 
-registration,segmentation & statistical analysis tools:
-ITK+ANTs+R = ANTsR
+## general purpose library of multivariate image 
+registration,segmentation & statistical analysis tools
 
 * 170,000+ lines of C++, 6$+$ years of work, 15+ collaborators. 
 
