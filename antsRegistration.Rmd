@@ -270,20 +270,7 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 ## with landmarks ... two metrics 
 
-## important in segmentation: brain extraction, segmentation, anatomical labeling
-
-* general purpose 
-
-* can use library of shapes to identify objects ...
-
-
-## building templates
-
-# ANTs in competition
-
-## "grand challenges"
-
-## ANTs versus Freesurfer 
+# ANTs versus Freesurfer 
 
 # ANTs statistics: *ANTsR* 
 
