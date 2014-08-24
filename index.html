@@ -55,6 +55,26 @@
     <style type="text/css">code{white-space: pre;}</style>
 
 
+<style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #cccccc; background-color: #303030; }
+code > span.kw { color: #f0dfaf; }
+code > span.dt { color: #dfdfbf; }
+code > span.dv { color: #dcdccc; }
+code > span.bn { color: #dca3a3; }
+code > span.fl { color: #c0bed1; }
+code > span.ch { color: #dca3a3; }
+code > span.st { color: #cc9393; }
+code > span.co { color: #7f9f7f; }
+code > span.ot { color: #efef8f; }
+code > span.al { color: #ffcfaf; }
+code > span.fu { color: #efef8f; }
+code > span.er { color: #c3bf9f; }
+</style>
 
 <link rel="stylesheet" href="index_files/reveal.js-2.6.1/css/theme/night.css" id="theme">
 
@@ -224,6 +244,10 @@
 <li class="fragment"><p>important for new schemes that <em>elect</em> solutions from <strong>anatomical or transformation</strong> dictionaries</p></li>
 <li class="fragment"><p>overall, relatively little translational work on this important problem in biomedical imaging</p></li>
 </ul>
+</section><section id="sampling-feature-selection-satellite-imagery" class="slide level2">
+<h1>Sampling &amp; feature selection: Satellite imagery</h1>
+</section><section id="sampling-feature-selection-lesioned-brains" class="slide level2">
+<h1>Sampling &amp; feature selection: Lesioned brains</h1>
 </section></section>
 <section><section id="evaluation-results" class="titleslide slide level1"><h1>Evaluation results</h1></section><section id="section-1" class="slide level2">
 <h1></h1>
@@ -256,31 +280,83 @@
 </div>
 <p><a href="http://ntustison.github.io/CongressionalFaceTemplates/">congress</a></p>
 </section></section>
-<section><section id="registration-with-priors" class="titleslide slide level1"><h1>Registration with priors</h1></section><section id="prior-knowledge-about-how-to-map---e.g.lesion-brains" class="slide level2">
-<h1>prior knowledge about how to map - e.g. lesion brains</h1>
-<blockquote>
-<p>a test &gt; is the best</p>
-</blockquote>
-</section><section id="we-need-to-deform-but-not-the-lesion" class="slide level2">
-<h1>we need to deform ( but not the lesion )</h1>
-</section><section id="with-landmarks-two-metrics" class="slide level2">
-<h1>with landmarks … two metrics</h1>
-</section></section>
 <section><section id="ants-versus-freesurfer" class="titleslide slide level1"><h1>ANTs versus Freesurfer</h1></section></section>
-<section><section id="ants-statistics-antsr" class="titleslide slide level1"><h1>ANTs statistics: <em>ANTsR</em></h1></section><section id="antsr-code-example" class="slide level2">
-<h1>ANTsR code example</h1>
-</section><section id="ptbp" class="slide level2">
-<h1>PTBP</h1>
-</section><section id="brats-competition" class="slide level2">
-<h1>BRATS competition</h1>
-</section><section id="antsr-eanat" class="slide level2">
-<h1>ANTsR: EANAT</h1>
-</section><section id="antsr-sccan" class="slide level2">
-<h1>ANTsR: SCCAN</h1>
-</section></section>
-<section><section id="registration-frontiers-and-innovation" class="titleslide slide level1"><h1>Registration: Frontiers and Innovation</h1></section><section id="coordinated-multivariate-statistical-fields-arise-from-this-mapping" class="slide level2">
-<h1>coordinated multivariate statistical fields arise from this mapping</h1>
+<section><section id="registration-statistics-frontiers-and-innovation" class="titleslide slide level1"><h1>Registration &amp; statistics: Frontiers and innovation</h1></section><section id="multivariate-statistical-fields-arise-from-fused-modalities" class="slide level2">
+<h1>multivariate statistical fields arise from fused modalities</h1>
 <p><img src="figures/statisticalfields.png" alt="images at measurement fields" /></p>
+</section><section id="itkantsr-antsr" class="slide level2">
+<h1>ITK+ANTs+R = <span style="color:red;"><em>ANTsR</em></span></h1>
+</section><section id="agnostic-statistics" class="slide level2">
+<h1>Agnostic statistics</h1>
+<p><img src="figures/antsrex.jpg" /></p>
+<p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3961542/">McMillan et al.</a></p>
+</section><section id="a-quick-antsr-example" class="slide level2">
+<h1>A Quick <span style="color:grey;"><em>ANTsR</em></span> example</h1>
+<p>This is an executable <em>ANTsR</em> code block - <em>N</em>-dimensional statistics to go with our <em>N</em>-dimensional image processing software!</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ANTsR)
+dim&lt;-<span class="dv">2</span>
+filename&lt;-<span class="kw">getANTsRData</span>(<span class="st">&#39;r16&#39;</span>)
+img&lt;-<span class="kw">antsImageRead</span>( filename , dim )
+filename&lt;-<span class="kw">getANTsRData</span>(<span class="st">&#39;r64&#39;</span>)
+img2&lt;-<span class="kw">antsImageRead</span>( filename , dim )
+mask&lt;-<span class="kw">getMask</span>(img,<span class="dv">150</span>,<span class="dv">255</span>,T)
+nvox&lt;-<span class="kw">sum</span>( mask ==<span class="st"> </span><span class="dv">1</span> )</code></pre>
+<p>The brain has 1180 voxels …</p>
+</section><section id="a-quick-antsr-example-1" class="slide level2">
+<h1>A Quick <span style="color:grey;"><em>ANTsR</em></span> example</h1>
+<p>Simulate a population morphometry study - a “VBM” …</p>
+<pre class="sourceCode r"><code class="sourceCode r">simnum&lt;-<span class="dv">10</span>
+imglist&lt;-<span class="kw">list</span>()
+imglist2&lt;-<span class="kw">list</span>()
+for ( i in <span class="dv">1</span>:simnum ) {
+  img1sim&lt;-<span class="kw">antsImageClone</span>(img)
+  img1sim[ mask==<span class="dv">1</span> ]&lt;-<span class="kw">rnorm</span>(nvox,<span class="dt">mean=</span><span class="fl">0.205</span>)
+  <span class="kw">SmoothImage</span>(dim,img1sim,<span class="fl">1.5</span>,img1sim)
+  img2sim&lt;-<span class="kw">antsImageClone</span>(img2)
+  img2sim[ mask==<span class="dv">1</span> ]&lt;-<span class="kw">rnorm</span>(nvox,<span class="dt">mean=</span><span class="fl">0.20</span>)
+  <span class="kw">SmoothImage</span>(dim,img2sim,<span class="fl">1.5</span>,img2sim)
+  imglist&lt;-<span class="kw">lappend</span>(imglist,img1sim)
+  imglist2&lt;-<span class="kw">lappend</span>(imglist2,img2sim)
+}
+imglist&lt;-<span class="kw">lappend</span>( imglist, imglist2 )
+mat&lt;-<span class="kw">imageListToMatrix</span>( imglist, mask )
+DX&lt;-<span class="kw">factor</span>( <span class="kw">c</span>( <span class="kw">rep</span>(<span class="dv">0</span>,simnum), <span class="kw">rep</span>(<span class="dv">1</span>,simnum) ) )
+mylmresults&lt;-<span class="kw">bigLMStats</span>( <span class="kw">lm</span>( mat ~<span class="st"> </span>DX ) )
+qvals&lt;-<span class="kw">p.adjust</span>( mylmresults$pval.model ) </code></pre>
+<p>The minimum q-value is 8.5119 × 10<sup>-40</sup> …</p>
+</section><section id="visualize-the-histograms-of-effects" class="slide level2">
+<h1>Visualize the histograms of effects</h1>
+<pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-8</span>
+voxdf&lt;-<span class="kw">data.frame</span>( <span class="dt">volume=</span><span class="kw">c</span>( <span class="kw">as.numeric</span>( mat[,whichvox] ) ), <span class="dt">DX=</span>DX )
+<span class="kw">ggplot</span>(voxdf, <span class="kw">aes</span>(volume, <span class="dt">fill =</span> DX)) +<span class="st"> </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.2</span>)</code></pre>
+<p><img src="FigsAntsRegistration/vizmorph.png" title="plot of chunk vizmorph" alt="plot of chunk vizmorph" width="864" /></p>
+</section><section id="visualize-the-anatomical-distribution" class="slide level2">
+<h1>Visualize the anatomical distribution</h1>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotANTsImage</span>(img,<span class="dt">functional=</span><span class="kw">list</span>(betas),<span class="dt">threshold=</span>thresh,
+  <span class="dt">outname=</span>ofn)</code></pre>
+<p><img src="FigsAntsRegistration/vizmorph2.jpg" /></p>
+</section><section id="the-power-of-ants-r-rightarrow-reproducible-imaging-science" class="slide level2">
+<h1>The power of <em>ANTs</em> <span class="math">\(+\)</span> <em>R</em> <span class="math">\(\rightarrow\)</span><br /> <span style="color:red;"><strong>Reproducible imaging science</strong></span></h1>
+<p><img src="figures/antsgoals.png" /></p>
+<p>… used in <a href="http://www.ncbi.nlm.nih.gov/pubmed/24096125">“Sparse canonical correlation analysis relates network-level atrophy to multivariate cognitive measures in a neurodegenerative population”</a> and several upcoming …</p>
+</section><section id="can-we-customize-these-methods-for-a-challenging-multivariate-segmentation-problem-with-clinical-relevance" class="slide level2">
+<h1>Can we customize these methods for a challenging multivariate segmentation problem with clinical relevance?</h1>
+</section><section id="automated-tumor-segmentation-from-multiple-mri" class="slide level2">
+<h1>Automated tumor segmentation from multiple MRI</h1>
+<p><img src="figures/tumorsegmentation.png" /></p>
+</section><section id="general-theory-tunable-to-specific-domains-no-free-lunch" class="slide level2">
+<h1>General theory tunable to specific domains: <em>no-free lunch</em></h1>
+<p><img src="figures/brats.png" /></p>
+<p><a href="http://hal.inria.fr/docs/00/93/56/40/PDF/brats_preprint.pdf">BRATS 2013 Challenge</a> <strong>won</strong> with <a href="https://github.com/stnava/ANTsR"><em>ANTsR</em></a></p>
+</section><section id="can-we-address-subtle-questions-in-brain-and-cognition-via-imaging-specific-dimensionality-reduction" class="slide level2">
+<h1>Can we address subtle questions in brain and cognition via imaging-specific dimensionality reduction?</h1>
+</section><section id="eigenanatomy-sccan" class="slide level2">
+<h1><a href="http://www.ncbi.nlm.nih.gov/pubmed/24852460">Eigenanatomy</a> &amp; <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=avants+SCCAN">SCCAN</a></h1>
+</section><section id="antsr-rightarrow-new-insight-via-quantification" class="slide level2">
+<h1>ANTs<em>R</em> <span class="math">\(\rightarrow\)</span> new insight via quantification</h1>
+<p>Good software should fade into the background … however …</p>
+<p><span style="color:red;"> As is common in science, the first big breakthrough in our understanding … [came from] an improvement in measurement. </span></p>
+<p><span style="color:blue;"> &gt; Daniel Kahnemann, <em>Thinking, Fast and Slow</em> (2011) </span></p>
 </section></section>
 <section><section id="analysis-philosophy-and-published-opinions" class="titleslide slide level1"><h1>Analysis philosophy and <br /> published opinions</h1></section><section id="what-is-and-is-not-image-registration" class="slide level2">
 <h1>What is and <em>is not</em> image registration</h1>
