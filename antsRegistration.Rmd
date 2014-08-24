@@ -170,6 +170,12 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 ## Concatenated transformation / metric stages are necessary in real data
 
+1.  adfadf
+
+*  adfafa
+
+*  adaf
+
 ## Optimizing registration benefits from *optimal sampling strategy*
 
 * sampling for *both* the metric and the transformation
