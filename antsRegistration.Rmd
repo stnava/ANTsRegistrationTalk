@@ -391,7 +391,7 @@ Good software should fade into the background ... however ...
 
 # Analysis philosophy and <br /> published opinions
 
-## What is and *is not* image registration
+## What is and *is not*<br /> image registration
 
 [*not* registration](http://www.ncbi.nlm.nih.gov/pubmed/23116330)
 
