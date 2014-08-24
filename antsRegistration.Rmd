@@ -72,6 +72,9 @@ plausible physical modeling of large, invertible deformations
 
 "differentiable map with differentiable inverse"
 
+## Fine-grained and flexible maps
+![](./figures/highresdiffeos.jpg)
+
 ## ANTs: Beyond Registration
 
 ![](./figures/antscapabilities.jpg)
@@ -130,15 +133,6 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 ![](./figures/designprinciples.png)
 
 
-## The *A*-team of similarity metrics
-
-![](./figures/towardsstandardmetric.png)
-
-$$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
-
-**all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
-
-
 ## ANTs Nomenclature / Standards 
 ![](./figures/antsnomen1.jpg)
 
@@ -150,7 +144,30 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 
 ## ANTs Nomenclature / Standards 
 ![](./figures/antsnomen4.jpg)
+
+
+## The *A*-team of similarity metrics
+
+![](./figures/towardsstandardmetric.png)
+
+$$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
+
+**all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
+
  
+## The optimization function
+
+Find mapping $$ \phi(x,p) \in \mathcal{T} $$ such that
+
+$$ M(I,J,\phi(x,p)) $$ is minimized
+
+Must select both metric $M$ and transformation $\mathcal{T}$
+
+... in addition to optimizer and the problem's resolution
+
+
+## Concatenating transformation / metric stages are necessary in real data
+
 # Registration with priors 
 
 ## prior knowledge about how to map - e.g. lesion brains
@@ -158,9 +175,6 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 > a test 
 >> is the best
 
-## we need to rotate
-
-## we need to scale and shear 
 
 ## we need to deform ( but not the lesion )
 
@@ -171,9 +185,6 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 * general purpose 
 
 * can use library of shapes to identify objects ...
-
-## Fine-grained and flexible maps
-![](./figures/highresdiffeos.jpg)
 
 
 ## building templates
@@ -219,6 +230,32 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 [Instrumentation bias in the use and evaluation of software](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3766821/?report=reader)
 
 # Conclusion
+
+## Recap
+
+- Powerful, general-purpose, <span style="color:red;">well-evaluated</span> registration and segmentation.
+
+- Differentiable maps with differentiable inverse <span style="color:red;">$+$ statistics in these spaces</span>
+
+- Evaluated in multiple problem domains</span> via internal studies & open competition
+
+- Borg philosophy: <span style="color:red;">"best of"</span> from I/O, to processing to statistical methods
+
+- Open source, testing, many examples, consistent style, multiple platforms,  active community support ...
+
+- Integration with *R* $+$ novel tools for prediction, decoding, high-to-low dimensional statistics.
+
+- Collaborations with [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.slicer.org/), [brainsfit](https://github.com/BRAINSia/BRAINSTools), [nipype](http://nipy.sourceforge.net/nipype/), [itk](http://www.itk.org) and more ...
+
+
+## Challenges: Computational and Scientific
+
+- Scalability: **need to fuse feature selection methods with transformation optimization**
+- Scalability: **need to leverage existing ITK streaming infrastructure in application level tool**
+- Domain expertise: Customizable for specific problems but sometimes not specific enough
+- Rapid development: colleagues still need familiarity with compilation for latest ANTs features
+- Latest theoretical advances in registration not yet wrapped for users
+- Need more [Documentation](http://stnava.github.io/ANTs/)  & [testing](http://testing.psychiatry.uiowa.edu/CDash/index.php?project=ANTS) ...
 
 ## Tools you can use for imaging science
 

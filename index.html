@@ -117,6 +117,9 @@
 </div>
 <p>plausible physical modeling of large, invertible deformations</p>
 <p>“differentiable map with differentiable inverse”</p>
+</section><section id="fine-grained-and-flexible-maps" class="slide level2">
+<h1>Fine-grained and flexible maps</h1>
+<p><img src="figures/highresdiffeos.jpg" /></p>
 </section><section id="ants-beyond-registration" class="slide level2">
 <h1>ANTs: Beyond Registration</h1>
 <p><img src="figures/antscapabilities.jpg" /></p>
@@ -154,11 +157,6 @@
 </section><section id="the-technical-framework" class="slide level2">
 <h1>The Technical Framework</h1>
 <p><img src="figures/designprinciples.png" /></p>
-</section><section id="the-a-team-of-similarity-metrics" class="slide level2">
-<h1>The <em>A</em>-team of similarity metrics</h1>
-<p><img src="figures/towardsstandardmetric.png" /></p>
-<p><span class="math">\[ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{&lt; I, J &gt;}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}\]</span></p>
-<p><strong>all metrics</strong> may be computed from <strong>sparse</strong> or <strong>dense</strong> samples and used with low or high-dimensional transformations</p>
 </section><section id="ants-nomenclature-standards" class="slide level2">
 <h1>ANTs Nomenclature / Standards</h1>
 <p><img src="figures/antsnomen1.jpg" /></p>
@@ -171,16 +169,25 @@
 </section><section id="ants-nomenclature-standards-3" class="slide level2">
 <h1>ANTs Nomenclature / Standards</h1>
 <p><img src="figures/antsnomen4.jpg" /></p>
+</section><section id="the-a-team-of-similarity-metrics" class="slide level2">
+<h1>The <em>A</em>-team of similarity metrics</h1>
+<p><img src="figures/towardsstandardmetric.png" /></p>
+<p><span class="math">\[ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{&lt; I, J &gt;}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}\]</span></p>
+<p><strong>all metrics</strong> may be computed from <strong>sparse</strong> or <strong>dense</strong> samples and used with low or high-dimensional transformations</p>
+</section><section id="the-optimization-function" class="slide level2">
+<h1>The optimization function</h1>
+<p>Find mapping <span class="math">\[ \phi(x,p) \in \mathcal{T} \]</span> such that</p>
+<p><span class="math">\[ M(I,J,\phi(x,p)) \]</span> is minimized</p>
+<p>Must select both metric <span class="math">\(M\)</span> and transformation <span class="math">\(\mathcal{T}\)</span></p>
+<p>… in addition to optimizer and the problem’s resolution</p>
+</section><section id="concatenating-transformation-metric-stages-are-necessary-in-real-data" class="slide level2">
+<h1>Concatenating transformation / metric stages are necessary in real data</h1>
 </section></section>
 <section><section id="registration-with-priors" class="titleslide slide level1"><h1>Registration with priors</h1></section><section id="prior-knowledge-about-how-to-map---e.g.lesion-brains" class="slide level2">
 <h1>prior knowledge about how to map - e.g. lesion brains</h1>
 <blockquote>
 <p>a test &gt; is the best</p>
 </blockquote>
-</section><section id="we-need-to-rotate" class="slide level2">
-<h1>we need to rotate</h1>
-</section><section id="we-need-to-scale-and-shear" class="slide level2">
-<h1>we need to scale and shear</h1>
 </section><section id="we-need-to-deform-but-not-the-lesion" class="slide level2">
 <h1>we need to deform ( but not the lesion )</h1>
 </section><section id="with-landmarks-two-metrics" class="slide level2">
@@ -191,9 +198,6 @@
 <li class="fragment"><p>general purpose</p></li>
 <li class="fragment"><p>can use library of shapes to identify objects …</p></li>
 </ul>
-</section><section id="fine-grained-and-flexible-maps" class="slide level2">
-<h1>Fine-grained and flexible maps</h1>
-<p><img src="figures/highresdiffeos.jpg" /></p>
 </section><section id="building-templates" class="slide level2">
 <h1>building templates</h1>
 </section></section>
@@ -227,7 +231,28 @@
 <h1>Instrumentation bias in the use and evaluation of software</h1>
 <p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3766821/?report=reader">Instrumentation bias in the use and evaluation of software</a></p>
 </section></section>
-<section><section id="conclusion" class="titleslide slide level1"><h1>Conclusion</h1></section><section id="tools-you-can-use-for-imaging-science" class="slide level2">
+<section><section id="conclusion" class="titleslide slide level1"><h1>Conclusion</h1></section><section id="recap" class="slide level2">
+<h1>Recap</h1>
+<ul>
+<li class="fragment"><p>Powerful, general-purpose, <span style="color:red;">well-evaluated</span> registration and segmentation.</p></li>
+<li class="fragment"><p>Differentiable maps with differentiable inverse <span style="color:red;"><span class="math">\(+\)</span> statistics in these spaces</span></p></li>
+<li class="fragment"><p>Evaluated in multiple problem domains</span> via internal studies &amp; open competition</p></li>
+<li class="fragment"><p>Borg philosophy: <span style="color:red;">“best of”</span> from I/O, to processing to statistical methods</p></li>
+<li class="fragment"><p>Open source, testing, many examples, consistent style, multiple platforms, active community support …</p></li>
+<li class="fragment"><p>Integration with <em>R</em> <span class="math">\(+\)</span> novel tools for prediction, decoding, high-to-low dimensional statistics.</p></li>
+<li class="fragment"><p>Collaborations with <a href="http://neuro.debian.net/pkgs/ants.html">neurodebian</a>, <a href="http://www.slicer.org/">slicer</a>, <a href="https://github.com/BRAINSia/BRAINSTools">brainsfit</a>, <a href="http://nipy.sourceforge.net/nipype/">nipype</a>, <a href="http://www.itk.org">itk</a> and more …</p></li>
+</ul>
+</section><section id="challenges-computational-and-scientific" class="slide level2">
+<h1>Challenges: Computational and Scientific</h1>
+<ul>
+<li class="fragment">Scalability: <strong>need to fuse feature selection methods with transformation optimization</strong></li>
+<li class="fragment">Scalability: <strong>need to leverage existing ITK streaming infrastructure in application level tool</strong></li>
+<li class="fragment">Domain expertise: Customizable for specific problems but sometimes not specific enough</li>
+<li class="fragment">Rapid development: colleagues still need familiarity with compilation for latest ANTs features</li>
+<li class="fragment">Latest theoretical advances in registration not yet wrapped for users</li>
+<li class="fragment">Need more <a href="http://stnava.github.io/ANTs/">Documentation</a> &amp; <a href="http://testing.psychiatry.uiowa.edu/CDash/index.php?project=ANTS">testing</a> …</li>
+</ul>
+</section><section id="tools-you-can-use-for-imaging-science" class="slide level2">
 <h1>Tools you can use for imaging science</h1>
 <ul>
 <li class="fragment"><p>Core developers: <em>B. Avants, N. Tustison, H. J. Johnson, J. T. Duda</em></p></li>
