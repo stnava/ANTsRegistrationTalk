@@ -59,13 +59,16 @@ initialization
 
 # plug *your ideas* into our software: <br /> <span style="color:blue;"> <span style="color:red;">innovation, insight</span> from biomedical data</span> ...
 
-## 
+## Founding developers
 
 ![](./figures/bant.png)
 
-## 
+## Long-term collaborators
 
 ![](./figures/antscollab.jpg)
+
+
+$+$ [neurodebian](http://neuro.debian.net/pkgs/ants.html), [slicer](http://www.slicer.org/), [brainsfit](https://github.com/BRAINSia/BRAINSTools), [nipype](http://nipy.sourceforge.net/nipype/), [itk](http://www.itk.org) and more ...
 
 # Registration
 
