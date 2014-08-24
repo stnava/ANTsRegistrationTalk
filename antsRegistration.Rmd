@@ -109,6 +109,9 @@ application specific domains:  no-free lunch
 
 ## The Technical Framework
 
+![](./figures/designprinciples.png)
+
+
 ## The *A*-team of similarity metrics
 
 ![](./figures/towardsstandardmetric.png)
