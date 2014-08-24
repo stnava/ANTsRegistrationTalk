@@ -221,7 +221,7 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 ![](./figures/evalhistory.png)
 
 
-## Exploiting anatomical dictionaries
+## Exploiting anatomical dictionaries with [label fusion (link)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049832/)
 ![](./figures/sata2013.jpg)
 
 
