@@ -203,7 +203,7 @@ uses more than a single interpolation.
 
 We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as part of its V4 reboot!
 
-## Registration benefits from *optimal sampling strategy*
+## Registration benefits from<br /> *optimal sampling strategy*
 
 * sampling for *both* the metric and the transformation
 
