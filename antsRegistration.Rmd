@@ -106,7 +106,7 @@ application specific domains:  no-free lunch
 
 * ```
     An algorithm must use prior knowledge about a problem 
-    to do well on that problem
+    to do well on that problem \s\s\s\s
 ```
 
 # Registration:  Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
