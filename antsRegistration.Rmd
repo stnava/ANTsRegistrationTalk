@@ -107,10 +107,7 @@ application specific domains:  no-free lunch
 
 * Several "wins" in public knock-abouts ( [Klein 2009](http://www.ncbi.nlm.nih.gov/pubmed/19195496), [Murphy 2011](http://www.ncbi.nlm.nih.gov/pubmed/21632295), [SATA 2012 and 2013](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837555/), [BRATS 2013](http://martinos.org/qtim/miccai2013/proc_brats_2013.pdf), others ) 
 
-```
-    An algorithm must use prior knowledge about a problem 
-    to do well on that problem 
-```
+$ An algorithm must use prior knowledge about a problem to do well on that problem $
 
 # <span style="color:red;">Medical Image Registration</span> <br /> Fundamental tool for morphometry, segmentation, motion estimation and <br /> <span style="color:blue;">data cleaning</span>
 
