@@ -113,7 +113,7 @@ application specific domains:  no-free lunch
 
 * Registration $=$ estimate an "optimal" geometric mapping between image pairs or image sets (e.g. Affine)
 
-* Similarity $=$ a function relating one image to another, given a transformation
+* Similarity $=$ a function relating one image to another, given a transformation (e.g. mutual information)
 
 * <span style="color:grey;">
 Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly putty", viscous fluid)  </span>
