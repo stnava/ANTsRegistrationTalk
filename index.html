@@ -140,7 +140,7 @@
 <li class="fragment"><p>170,000+ lines of C++, 6<span class="math">\(+\)</span> years of work, 15+ collaborators.</p></li>
 <li class="fragment"><p>Generic mathematical methods that are tunable for application specific domains: no-free lunch</p></li>
 <li class="fragment"><p>Deep testing on multiple platforms … osx, linux, windows.</p></li>
-<li class="fragment"><p>Several “wins” in public knock-abouts ( <a href="http://www.ncbi.nlm.nih.gov/pubmed/19195496">Klein 2009</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/21632295">Murphy 2011</a>, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837555/">SATA 2012 and 2013</a>, <a href="http://martinos.org/qtim/miccai2013/proc_brats_2013.pdf">BRATS 2013</a> )</p></li>
+<li class="fragment"><p>Several “wins” in public knock-abouts ( <a href="http://www.ncbi.nlm.nih.gov/pubmed/19195496">Klein 2009</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/21632295">Murphy 2011</a>, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837555/">SATA 2012 and 2013</a>, <a href="http://martinos.org/qtim/miccai2013/proc_brats_2013.pdf">BRATS 2013</a>, others )</p></li>
 </ul>
 <pre><code>    An algorithm must use prior knowledge about a problem 
     to do well on that problem </code></pre>
@@ -177,9 +177,9 @@
 <p><strong>all metrics</strong> may be computed from <strong>sparse</strong> or <strong>dense</strong> samples and used with low or high-dimensional transformations</p>
 </section><section id="the-optimization-function" class="slide level2">
 <h1>The optimization function</h1>
-<p>Find mapping <span class="math">\[ \phi(x,p) \in \mathcal{T} \]</span> such that</p>
-<p><span class="math">\[ M(I,J,\phi(x,p)) \]</span> is minimized</p>
-<p>Must select both metric <span class="math">\(M\)</span> and transformation <span class="math">\(\mathcal{T}\)</span></p>
+<p>Find mapping <span class="math">\[ \color{red} \phi(x,p) \in \mathcal{T} \]</span> such that</p>
+<p><span class="math">\[ \color{red} M(I,J,\phi(x,p)) \]</span> is minimized</p>
+<p>Must select both metric <span class="math">\(\color{red} M\)</span> and transformation <span class="math">\(\color{red} \mathcal{T}\)</span></p>
 <p>… in addition to optimizer and the problem’s resolution</p>
 </section><section id="concatenating-transformation-metric-stages-are-necessary-in-real-data" class="slide level2">
 <h1>Concatenating transformation / metric stages are necessary in real data</h1>
