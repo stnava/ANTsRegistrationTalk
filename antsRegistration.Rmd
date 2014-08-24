@@ -107,7 +107,7 @@ application specific domains:  no-free lunch
     to do well on that problem 
 ```
 
-# Registration \s\s Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
+# <span style="color:red;">Registration</span> <br /> Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
 
 ## Definitions
 
