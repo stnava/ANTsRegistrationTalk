@@ -273,7 +273,7 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 # ANTs versus Freesurfer 
 
-# Registration & statistics: Frontiers and innovation
+# Registration & statistics:<br /> Frontiers and innovation
 
 ## multivariate statistical fields arise from fused modalities
 
