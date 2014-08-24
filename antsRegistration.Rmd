@@ -105,7 +105,8 @@ ITK+ANTs+R = ANTsR
 application specific domains:  no-free lunch
 
 ```
-    An algorithm must use prior knowledge about a problem to do well on that problem
+    An algorithm must use prior knowledge about a problem 
+    to do well on that problem
 ```
 
 # Registration:  Fundamental tool for morphometry, segmentation, motion estimation and data cleaning
