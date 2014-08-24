@@ -59,6 +59,15 @@ initialization
 
 # plug *your ideas* into our software: <br /> <span style="color:blue;"> <span style="color:red;">innovation, insight</span> from biomedical data</span> ...
 
+
+## ANTs Lineage 
+
+![](./figures/lineage.jpg)
+
+## ANTs Capabilities
+
+![](./figures/antscapabilities.jpg)
+
 ## Founding developers
 
 <div align="center"><img width="1433" src="./figures/bant.png" frameborder="0"></img></div>
