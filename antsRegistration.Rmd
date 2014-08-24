@@ -221,7 +221,7 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 ![](./figures/evalhistory.png)
 
 
-## SATA: Electing anatomical labels 
+## Exploiting anatomical dictionaries
 ![](./figures/sata2013.jpg)
 
 
