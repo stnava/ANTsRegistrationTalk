@@ -167,7 +167,7 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 **all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
 
  
-## Find mapping <br />$ \color{red}{ \phi(x,p) \in \mathcal{T} }$<br /> such that <br /> $ \color{red}{ M(I,J,\phi(x,p)) }$ is minimized
+## Find mapping <br /> $ \color{red}{ \phi(x,p) \in \mathcal{T} }$ <br /> such that <br /> $ \color{red}{ M(I,J,\phi(x,p)) } $ is minimized
 
 Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathcal{T}}$
 
