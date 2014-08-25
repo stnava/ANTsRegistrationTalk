@@ -253,12 +253,12 @@ FIXME
 ## 
 ![](./figures/evalhistory.png)
 
-##
+## Anatomical dictionaries
 ![](./figures/sata2013.png)
 
 we provided the *standard* registration results for $>$ 20,000 image pairs at [SATA 2013](https://masi.vuse.vanderbilt.edu/workshop2013/index.php/MICCAI_2013_SATA_Challenge_and_Workshop:Current_events)
 
-## Anatomical dictionaries & [label fusion (link)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049832/)
+## [label fusion (link)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049832/)
 ![](./figures/sata2013.jpg)
 
 
