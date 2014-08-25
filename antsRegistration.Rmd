@@ -322,6 +322,9 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 *Many opportunities for statistical advancements*
 
+## Scientific Data 2014
+![](./figures/ptbp2.png)
+
 ## ITK+ANTs+R = <span style="color:red;">*ANTsR*</span>
 
 ## Agnostic statistics
