@@ -355,10 +355,10 @@ mat&lt;-<span class="kw">imageListToMatrix</span>( imglist, mask )
 DX&lt;-<span class="kw">factor</span>( <span class="kw">c</span>( <span class="kw">rep</span>(<span class="dv">0</span>,simnum), <span class="kw">rep</span>(<span class="dv">1</span>,simnum) ) )
 mylmresults&lt;-<span class="kw">bigLMStats</span>( <span class="kw">lm</span>( mat ~<span class="st"> </span>DX ) )
 qvals&lt;-<span class="kw">p.adjust</span>( mylmresults$pval.model ) </code></pre>
-<p>The minimum q-value is 5.5154 × 10<sup>-5</sup> …</p>
+<p>The minimum q-value is 3.1423 × 10<sup>-5</sup> …</p>
 </section><section id="visualize-the-histograms-of-effects" class="slide level2">
 <h1>Visualize the histograms of effects</h1>
-<pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-3</span>
+<pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-2</span>
 voxdf&lt;-<span class="kw">data.frame</span>( <span class="dt">volume=</span><span class="kw">c</span>( <span class="kw">as.numeric</span>( mat[,whichvox] ) ), <span class="dt">DX=</span>DX )
 <span class="kw">ggplot</span>(voxdf, <span class="kw">aes</span>(volume, <span class="dt">fill =</span> DX)) +<span class="st"> </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.2</span>)</code></pre>
 <p><img src="FigsAntsRegistration/vizmorph.png" title="plot of chunk vizmorph" alt="plot of chunk vizmorph" width="864" /></p>
