@@ -293,7 +293,7 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 * $>$ 1200 subjects, age 7 to over 90 years old
 
-* hint: we "win"
+* *hint*: ANTs thickness measurements have higher prediction accuracy relative to Freesurfer ( implying we extract more information from the data )
 
 # Registration & statistics:<br /> Frontiers and innovation
 
