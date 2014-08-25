@@ -180,7 +180,7 @@ $$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p
 
 **all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
 
-[our research on similarity metrics for low and high-dimensional registration](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065962/)
+[our research on similarity metrics for brain registration](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065962/)
 
 ## [SyN](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2276735/) for optimization symmetry
 ![](./figures/fishSyN.png)
