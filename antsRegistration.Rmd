@@ -393,7 +393,7 @@ plotANTsImage(img,functional=list(betas),threshold=thresh,
 
 ##  [Eigenanatomy](http://www.ncbi.nlm.nih.gov/pubmed/24852460) & [SCCAN](http://www.ncbi.nlm.nih.gov/pubmed/?term=avants+SCCAN)
 
-## ANTs*R* $\rightarrow$ new insight <br />via a better analytics
+## ANTs*R* $\rightarrow$ new insight <br />via better analytics
 
 Good software should fade into the background ... however ...
 
@@ -405,21 +405,6 @@ Good software should fade into the background ... however ...
 <span style="color:blue;">
 > Daniel Kahnemann, *Thinking, Fast and Slow* (2011)
 </span>
-
-
-# Analysis philosophy and <br /> published opinions
-
-## What is and *is not*<br /> image registration
-
-[*not* registration](http://www.ncbi.nlm.nih.gov/pubmed/23116330)
-
-## Voodoo in voxel-based analysis
-
-[logical circularity VBA](http://www.ncbi.nlm.nih.gov/pubmed/?term=logical+circularity+tustison)
-
-## Instrumentation bias in the use and evaluation of software
-
-[Instrumentation bias in the use and evaluation of software](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3766821/?report=reader)
 
 # Conclusion
 
@@ -466,7 +451,20 @@ Good software should fade into the background ... however ...
 <img style="float: right" src="figures/penn.png" />
 <img style="float: left" src="figures/picsl.jpg" />
 
+# Analysis philosophy and <br /> published opinions
+
+## What is and *is not*<br /> image registration
+
+[*not* registration](http://www.ncbi.nlm.nih.gov/pubmed/23116330)
+
+## Voodoo in voxel-based analysis
+
+[logical circularity VBA](http://www.ncbi.nlm.nih.gov/pubmed/?term=logical+circularity+tustison)
+
+## Instrumentation bias in the use and evaluation of software
+
+[Instrumentation bias in the use and evaluation of software](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3766821/?report=reader)
 
 
-## References {#reffont}
+# References {#reffont}
 
