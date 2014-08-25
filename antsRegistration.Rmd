@@ -243,7 +243,16 @@ Default in `antsCorticalThickness` pipeline and `FSL`.
 
 ## Sampling & feature selection: Biomedical imagery
 
-FIXME
+![](./figures/slides1.png)
+
+## Sampling & feature selection: Biomedical imagery
+
+![](./figures/slides2.png)
+
+## Sampling & feature selection: Biomedical imagery
+
+![](./figures/slides3.png)
+
 
 ## Sampling & feature selection: Lesioned brains
 
