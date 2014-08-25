@@ -295,6 +295,8 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 * *hint*: ANTs thickness measurements have higher prediction accuracy relative to Freesurfer ( implying we extract more information from the data )
 
+* ANTs methods consistently improve statistical power [eigenanatomy](http://www.ncbi.nlm.nih.gov/pubmed/24687814), [syn](http://www.ncbi.nlm.nih.gov/pubmed/?term=syn+epstein+avants), [itkv4](http://www.ncbi.nlm.nih.gov/pubmed/24817849)
+
 # Registration & statistics:<br /> Frontiers and innovation
 
 ## multivariate statistical fields arise from fused modalities
