@@ -177,6 +177,8 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 
 ... in addition to optimizer and the problem's resolution
 
+Discussed in more detail [in this frontiers paper](http://www.ncbi.nlm.nih.gov/pubmed/24817849)
+
 ## [SyN](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2276735/) for optimization symmetry
 ![](./figures/fishSyN.png)
 Images deform symmetrically along the shape manifold.  This eliminates bias in the
