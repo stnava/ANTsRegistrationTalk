@@ -349,9 +349,10 @@ filename<-getANTsRData('r16')
 img<-antsImageRead( filename , dim )
 filename<-getANTsRData('r64')
 img2<-antsImageRead( filename , dim )
-mask<-getMask(img,50,255,T)
-mask2<-getMask(img,150,255,T)
+mask<-getMask(img,50,max(img),T)
+mask2<-getMask(img,150,max(img),T)
 nvox<-sum( mask == 1 )
+nvox2<-sum( mask2 == 1 )
 ```
 The brain has `r nvox` voxels ...
 
@@ -365,7 +366,7 @@ imglist2<-list()
 for ( i in 1:simnum ) {
   img1sim<-antsImageClone(img)
   img1sim[ mask==1 ]<-rnorm(nvox,mean=0.20)
-  img1sim[ mask2==1 ]<-rnorm(nvox,mean=0.21)
+  img1sim[ mask2==1 ]<-rnorm(nvox2,mean=0.21)
   SmoothImage(dim,img1sim,1.5,img1sim)
   img2sim<-antsImageClone(img2)
   img2sim[ mask==1 ]<-rnorm(nvox,mean=0.20)
