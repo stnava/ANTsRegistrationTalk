@@ -235,7 +235,11 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) <br
 
 ## Sampling & feature selection: Multi-start
 
-FIXME
+![](./figures/multistart.jpg)
+
+Theoretical guarantee of global optimum: improves local optimizers.
+
+Default in `antsCorticalThickness` pipeline and `FSL`.
 
 ## Sampling & feature selection: Satellite imagery
 
@@ -243,7 +247,7 @@ FIXME
 
 ## Sampling & feature selection: Lesioned brains
 
-FIXME
+![](./figures/lesionedbrains.jpg)
 
 ## Sampling & feature selection: Summary
 
