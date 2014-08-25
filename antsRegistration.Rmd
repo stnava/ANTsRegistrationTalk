@@ -265,7 +265,7 @@ we provided the *standard* registration results for $>$ 20,000 image pairs at [S
 ## Multiple metrics improve performance
 ![](./figures/multivariateSATA.jpg)
 
-to our knowledge ants is the only free tool that can handle this type of problem.
+to our knowledge, ANTs is the only freely available system solve this problem in a fully multivariate manner.
 
 Hongzhi Wang won the "walk in the park" award for this work ...
 
