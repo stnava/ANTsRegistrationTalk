@@ -191,7 +191,7 @@ measurement of image differences.
 [SyN movie](http://www.youtube.com/embed/3I9RcRtpOvw)
 
 
-## Concatenated transformation / metric stages are necessary in real data
+## Concatenated transformation $+$ metric stages are necessary in real data
 
 1.  Start with a *rigid transformation*:  $I(x) \approx J(R(x))$ s.t. negative $MI$ is minimized
 
