@@ -382,7 +382,7 @@ The minimum q-value is `r min(qvals)` ...
 
 ## Visualize the histograms of effects
 ```{r vizmorph,results='hide'}
-whichvox<-qvals < 1.e-8
+whichvox<-qvals < 1.e-3
 voxdf<-data.frame( volume=c( as.numeric( mat[,whichvox] ) ), DX=DX )
 ggplot(voxdf, aes(volume, fill = DX)) + geom_density(alpha = 0.2)
 ```
