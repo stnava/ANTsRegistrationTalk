@@ -407,6 +407,7 @@ plotANTsImage(img,functional=list(betas),threshold=thresh,
 ## Network visualization
 ```{r network}
 ofn<-paste(figpath,'network',sep='')
+ofnpng<-paste(ofn,'.png',sep='')
        mnit<-getANTsRData("mni")
        mnit<-antsImageRead(mnit,3)
        mnia<-getANTsRData("mnia")
@@ -429,7 +430,7 @@ ofn<-paste(figpath,'network',sep='')
        dd<-make3ViewPNG(  rid, id, rid2,  ofn )
        par3d(userMatrix = id ) 
 ```
-![](`r ofn`)
+![](`r ofnpng`)
 
 ## The power of *ANTs* $+$ *R* $\rightarrow$<br /> <span style="color:red;">**Reproducible imaging science**</span> 
 

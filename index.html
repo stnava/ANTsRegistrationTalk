@@ -355,7 +355,7 @@ mat&lt;-<span class="kw">imageListToMatrix</span>( imglist, mask )
 DX&lt;-<span class="kw">factor</span>( <span class="kw">c</span>( <span class="kw">rep</span>(<span class="dv">0</span>,simnum), <span class="kw">rep</span>(<span class="dv">1</span>,simnum) ) )
 mylmresults&lt;-<span class="kw">bigLMStats</span>( <span class="kw">lm</span>( mat ~<span class="st"> </span>DX ) )
 qvals&lt;-<span class="kw">p.adjust</span>( mylmresults$pval.model ) </code></pre>
-<p>The minimum q-value is 5.1864 × 10<sup>-5</sup> …</p>
+<p>The minimum q-value is 1.6403 × 10<sup>-4</sup> …</p>
 </section><section id="visualize-the-histograms-of-effects" class="slide level2">
 <h1>Visualize the histograms of effects</h1>
 <pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-2</span>
@@ -370,6 +370,7 @@ voxdf&lt;-<span class="kw">data.frame</span>( <span class="dt">volume=</span><sp
 </section><section id="network-visualization" class="slide level2">
 <h1>Network visualization</h1>
 <pre class="sourceCode r"><code class="sourceCode r">ofn&lt;-<span class="kw">paste</span>(figpath,<span class="st">&#39;network&#39;</span>,<span class="dt">sep=</span><span class="st">&#39;&#39;</span>)
+ofnpng&lt;-<span class="kw">paste</span>(ofn,<span class="st">&#39;.png&#39;</span>,<span class="dt">sep=</span><span class="st">&#39;&#39;</span>)
        mnit&lt;-<span class="kw">getANTsRData</span>(<span class="st">&quot;mni&quot;</span>)
        mnit&lt;-<span class="kw">antsImageRead</span>(mnit,<span class="dv">3</span>)
        mnia&lt;-<span class="kw">getANTsRData</span>(<span class="st">&quot;mnia&quot;</span>)
@@ -395,7 +396,7 @@ voxdf&lt;-<span class="kw">data.frame</span>( <span class="dt">volume=</span><sp
        <span class="kw">par3d</span>(<span class="dt">userMatrix =</span> id ) 
        dd&lt;-<span class="kw">make3ViewPNG</span>(  rid, id, rid2,  ofn )
        <span class="kw">par3d</span>(<span class="dt">userMatrix =</span> id ) </code></pre>
-<p><img src="FigsAntsRegistration/network" /></p>
+<p><img src="FigsAntsRegistration/network.png" /></p>
 </section><section id="the-power-of-ants-r-rightarrow-reproducible-imaging-science" class="slide level2">
 <h1>The power of <em>ANTs</em> <span class="math">\(+\)</span> <em>R</em> <span class="math">\(\rightarrow\)</span><br /> <span style="color:red;"><strong>Reproducible imaging science</strong></span></h1>
 <p><img src="figures/antsgoals.png" /></p>
