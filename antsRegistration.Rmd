@@ -406,7 +406,7 @@ plotANTsImage(img,functional=list(betas),threshold=thresh,
 
 ## Network visualization
 ```{r network}
-ofn<-paste(figpath,'network.png',sep='')
+ofn<-paste(figpath,'network',sep='')
        mnit<-getANTsRData("mni")
        mnit<-antsImageRead(mnit,3)
        mnia<-getANTsRData("mnia")
@@ -426,7 +426,7 @@ ofn<-paste(figpath,'network.png',sep='')
        rid2<-rotate3d( id , pi/2, 0, 0, 1 )
        rid3<-rotate3d( id , -pi/2, 0, 0, 1 )
        par3d(userMatrix = id ) 
-       dd<-make3ViewPNG(  rid, id, rid2,  paste('network',sep='') )
+       dd<-make3ViewPNG(  rid, id, rid2,  ofn )
        par3d(userMatrix = id ) 
 ```
 ![](`r ofn`)
