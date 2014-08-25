@@ -267,7 +267,7 @@ we provided the *standard* registration results for $>$ 20,000 image pairs at [S
 
 to our knowledge ants is the only free tool that can handle this type of problem.
 
-won the "walk in the park" award for this work ...
+Hongzhi Wang won the "walk in the park" award for this work ...
 
 # Differentiable maps with<br /> differentiable inverse <br />$+$ *statistics in these spaces*
 
