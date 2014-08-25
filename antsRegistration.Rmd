@@ -195,6 +195,8 @@ measurement of image differences.
 
 ## Concatenated transformation $+$ metric stages are necessary in real data
 
+0.  Initialize the mapping ( more on this later )
+
 1.  Start with a *rigid transformation*:  $I(x) \approx J(R(x))$ s.t. negative $MI$ is minimized
 
 2.  Follow by an *affine transformation*:  $I(x) \approx J(R(A(x)))$ s.t. negative $MI$ is minimized with fixed $R$
@@ -228,6 +230,10 @@ We ported many of these ideas into the [Insight ToolKit](http://www.itk.org) as 
 
 * overall, relatively little translational work on this important problem in biomedical imaging
 
+## Sampling & feature selection: Multi-start
+
+FIXME
+
 ## Sampling & feature selection: Satellite imagery
 
 FIXME
@@ -235,6 +241,12 @@ FIXME
 ## Sampling & feature selection: Lesioned brains
 
 FIXME
+
+## Sampling & feature selection: Summary
+
+* we exploit these strategies.... 
+
+* FIXME
 
 # Evaluation results
 
