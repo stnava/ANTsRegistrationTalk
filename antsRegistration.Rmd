@@ -392,7 +392,7 @@ ggplot(voxdf, aes(volume, fill = DX)) + geom_density(alpha = 0.2)
 betas<-antsImageClone(mask)
 betavec<-abs(mylmresults$beta.t[1,])
 betas[mask==1]<-betavec
-SmoothImage(dim,betas,1,betas)
+SmoothImage(dim,betas,1.5,betas)
 thresh<-paste(3.0,'x',max(betavec),sep='')
 ofn<-paste(figpath,'vizmorph2.jpg',sep='')
 ```
