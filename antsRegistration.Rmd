@@ -393,7 +393,7 @@ plotANTsImage(img,functional=list(betas),threshold=thresh,
 
 ##  [Eigenanatomy](http://www.ncbi.nlm.nih.gov/pubmed/24852460) & [SCCAN](http://www.ncbi.nlm.nih.gov/pubmed/?term=avants+SCCAN)
 
-## ANTs*R* $\rightarrow$ new insight via quantification
+## ANTs*R* $\rightarrow$ new insight <br />via a better analytics
 
 Good software should fade into the background ... however ...
 
