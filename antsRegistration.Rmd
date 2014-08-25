@@ -45,19 +45,21 @@ opts_chunk$set(fig.width=9, fig.height=6, fig.path=figpath,
 
 This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://stnava.github.io/ANTsRegistrationTalk/) with colored [links](http://stnava.github.io/ANTsRegistrationTalk/) meant to be clicked for more information
 
-## we *can* compare apples and oranges ... 
+# we *can* compare apples and oranges ... 
+
+## apples and oranges ... 
 
 ![](./figures/appleorange1.png)
 
 initialization
 
-## we *can* compare apples and oranges ... 
+## apples and oranges ... 
 
 ![](./figures/appleorange2.png)
 
 <span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> affine
 
-## we *can* compare apples and oranges ... 
+## apples and oranges ... 
 
 ![](./figures/appleorange3.png)
 
