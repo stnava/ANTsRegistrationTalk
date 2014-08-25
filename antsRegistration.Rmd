@@ -245,14 +245,20 @@ Default in `antsCorticalThickness` pipeline and `FSL`.
 
 ![](./figures/slides1.png)
 
+Initial configuration of data
+
 ## Sampling & feature selection: Biomedical imagery
 
 ![](./figures/slides2.png)
+
+Automatic feature selection
 
 ## Sampling & feature selection: Biomedical imagery
 
 ![](./figures/slides3.png)
 
+Resampling allows comparison & slide alignment and <br />
+validates the feature selection
 
 ## Sampling & feature selection: Lesioned brains
 
