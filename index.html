@@ -263,14 +263,19 @@ code > span.er { color: #c3bf9f; }
 <h1>Sampling &amp; feature selection: Biomedical imagery</h1>
 <p><img src="figures/slides3.png" /></p>
 <p>Resampling allows comparison &amp; slide alignment and <br /> validates the feature selection</p>
+<p>Dramatic reduction in computation time / memory requirements</p>
 </section><section id="sampling-feature-selection-lesioned-brains" class="slide level2">
 <h1>Sampling &amp; feature selection: Lesioned brains</h1>
 <p><img src="figures/lesionedbrains.jpg" /></p>
 </section><section id="sampling-feature-selection-summary" class="slide level2">
 <h1>Sampling &amp; feature selection: Summary</h1>
 <ul>
-<li class="fragment"><p>we exploit these strategies….</p></li>
-<li class="fragment"><p>FIXME</p></li>
+<li class="fragment">we exploit these strategies to:
+<ul>
+<li class="fragment">accelerate</li>
+<li class="fragment">focus</li>
+<li class="fragment">validate</li>
+</ul></li>
 </ul>
 </section></section>
 <section><section id="evaluation-results" class="titleslide slide level1"><h1>Evaluation results</h1></section><section id="section-1" class="slide level2">
@@ -366,7 +371,7 @@ mat&lt;-<span class="kw">imageListToMatrix</span>( imglist, mask )
 DX&lt;-<span class="kw">factor</span>( <span class="kw">c</span>( <span class="kw">rep</span>(<span class="dv">0</span>,simnum), <span class="kw">rep</span>(<span class="dv">1</span>,simnum) ) )
 mylmresults&lt;-<span class="kw">bigLMStats</span>( <span class="kw">lm</span>( mat ~<span class="st"> </span>DX ) )
 qvals&lt;-<span class="kw">p.adjust</span>( mylmresults$pval.model ) </code></pre>
-<p>The minimum q-value is 3.2619 × 10<sup>-4</sup> …</p>
+<p>The minimum q-value is 5.201 × 10<sup>-5</sup> …</p>
 </section><section id="visualize-the-histograms-of-effects" class="slide level2">
 <h1>Visualize the histograms of effects</h1>
 <pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-2</span>

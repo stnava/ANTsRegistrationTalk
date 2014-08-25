@@ -260,15 +260,18 @@ Automatic feature selection
 Resampling allows comparison & slide alignment and <br />
 validates the feature selection
 
+Dramatic reduction in computation time / memory requirements
+
 ## Sampling & feature selection: Lesioned brains
 
 ![](./figures/lesionedbrains.jpg)
 
 ## Sampling & feature selection: Summary
 
-* we exploit these strategies.... 
-
-* FIXME
+* we exploit these strategies to:
+    - accelerate
+    - focus 
+    - validate
 
 # Evaluation results
 
