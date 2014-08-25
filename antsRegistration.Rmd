@@ -453,12 +453,17 @@ Good software should fade into the background ... however ...
 
 ## Challenges: Computational and Scientific
 
-- Scalability: **need to fuse feature selection methods with transformation optimization**
-- Scalability: **need to leverage existing ITK streaming infrastructure in application level tool**
+- Scalability
+    - **need to fuse feature selection methods with transformation optimization**
+    - **need to leverage existing ITK streaming infrastructure in application level tool**
 - Domain expertise: Customizable for specific problems but sometimes not specific enough
+- "Plausible physical modeling ..." - this should vary per problem ... but doesn't.
+    - a fabulous project would be to resolve this issue at a large-scale e.g. for reconstructing neurons, measuring white matter elaboration ...
+    - our prior FEM work is one potential solution
 - Rapid development: colleagues still need familiarity with compilation for latest ANTs features
 - Latest theoretical advances in registration not yet wrapped for users
 - Need more [Documentation](http://stnava.github.io/ANTs/)  & [testing](http://testing.psychiatry.uiowa.edu/CDash/index.php?project=ANTS) ...
+
 
 ## Tools you can use for imaging science
 
