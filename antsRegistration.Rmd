@@ -193,11 +193,11 @@ measurement of image differences.
 
 ## Concatenated transformation / metric stages are necessary in real data
 
-1.  Start with a *rigid transformation*:  $I \approx J(R(x))$ s.t. negative $MI(I,J,R)$ is minimized
+1.  Start with a *rigid transformation*:  $I(x) \approx J(R(x))$ s.t. negative $MI(I,J,R)$ is minimized
 
-2.  Follow by an *affine transformation*:  $I \approx J(A(R(x)))$ s.t. negative $MI(I,J,A \circ R)$ is minimized with fixed $R$
+2.  Follow by an *affine transformation*:  $I(x) \approx J(A(R(x)))$ s.t. negative $MI(I,J,A \circ R)$ is minimized with fixed $R$
 
-3.  Finally, a *diffeomorphism*:  $I \approx J(\phi(A(R(x))))$ s.t. $k$-neighborhood correlation $CC_k(I,J,A \circ R)$ is minimized with fixed $R, A$
+3.  Finally, a *diffeomorphism*:  $I(x) \approx J(\phi(A(R(x))))$ s.t. $k$-neighborhood correlation $CC_k(I,J,A \circ R)$ is minimized with fixed $R, A$
 
 4.  Output the *composite transform* $A \circ R$ as a matrix transformation and $\phi$ and $\phi^{-1}$ as deformation fields.
 
