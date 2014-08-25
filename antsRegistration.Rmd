@@ -144,6 +144,7 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 
 ![](./figures/designprinciples.png)
 
+... and most of it multivariate.
 
 ## ANTs Nomenclature / Standards 
 ![](./figures/antsnomen1.jpg)
@@ -157,15 +158,6 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 ## ANTs Nomenclature / Standards 
 ![](./figures/antsnomen4.jpg)
 
-
-## The *A*-team of similarity metrics
-
-![](./figures/towardsstandardmetric.png)
-
-$$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
-
-**all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
-
  
 ## The optimization problem
 
@@ -178,6 +170,16 @@ Must select both metric $\color{red}{M}$ and transformation $\color{red}{\mathca
 ... in addition to optimizer and the problem's resolution
 
 Discussed in more detail [in this frontiers paper](http://www.ncbi.nlm.nih.gov/pubmed/24817849)
+
+
+## The *A*-team of similarity metrics
+
+![](./figures/towardsstandardmetric.png)
+
+$$ \| I - J \| ~~~~~~~~~~~~~~~~~~~ \frac{< I, J >}{\|I\|\|J\|} ~~~~~~~~~~~~~~~ p(I,J) log \frac{p(I,J)}{p(I)p(J)}$$
+
+**all metrics** may be computed from **sparse** or **dense** samples and used with low or high-dimensional transformations
+
 
 ## [SyN](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2276735/) for optimization symmetry
 ![](./figures/fishSyN.png)
