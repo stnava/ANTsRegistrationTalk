@@ -119,6 +119,10 @@ code > span.er { color: #c3bf9f; }
 <section id="image-mapping-perception-1878" class="slide level2">
 <h1>Image mapping &amp; perception: 1878</h1>
 <p><img src="figures/galton.png" /></p>
+<ul>
+<li class="fragment"><p>Francis Galton: Can we see criminality in the face?</p></li>
+<li class="fragment"><p>(maybe he should have used ANTs?)</p></li>
+</ul>
 </section>
 <section><section id="we-can-compare-apples-and-oranges" class="titleslide slide level1"><h1>we <em>can</em> compare<br /> <span style="color:red;">apples</span> and <span style="color:orange;">oranges</span> …</h1></section><section id="apples-and-oranges" class="slide level2">
 <h1>apples and oranges …</h1>
@@ -132,16 +136,20 @@ code > span.er { color: #c3bf9f; }
 <h1>apples and oranges …</h1>
 <p><img src="figures/appleorange3.png" /></p>
 <p><span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> deformable registration - i.e. registration on color</p>
+</section><section id="ants-is-open-to-different-image-types-multiple-modalities-anatomical-regions-segmentation-priors-etc." class="slide level2">
+<h1>ANTs is <em>open</em> to different image types, multiple modalities, anatomical regions, segmentation priors, etc.</h1>
 </section><section id="ants-neuroscience" class="slide level2">
 <h1>ANTs &amp; Neuroscience</h1>
 <p>We need statistical image analysis <br />at several scales in modern neuroscience</p>
 <ul>
 <li class="fragment"><p>Macro: <em>in vivo</em> structural and functional MRI</p></li>
 <li class="fragment"><p>Micro: high-resolution post-mortem MRI links with in vivo MRI</p></li>
-<li class="fragment"><p>Nano: neuron recostrunction</p></li>
-<li class="fragment"><p>ANTs and ITK are uniquely positioned to address these needs</p></li>
-<li class="fragment"><p>currently lack “off the shelf” solutions … but the core is there</p></li>
-<li class="fragment"><p>These methods have the potential to link data across these scales and provide new insights into brain structure and function</p></li>
+<li class="fragment"><p>Nano: neuron reconstruction …</p></li>
+<li class="fragment"><p>Solutions that are consistent across these scales have the potential to build multi-scale feature sets or templates and provide new insights into brain structure and function</p></li>
+<li class="fragment"><p>E.g. Parcellation constraints based on histology, tractography, function …</p></li>
+<li class="fragment"><p>Statistical definitions of anatomy/pathology?</p></li>
+<li class="fragment"><p>Reinvention of these solutions within each lab … can we mitigate this?</p></li>
+<li class="fragment"><p>Reduce, reuse, recycle …</p></li>
 </ul>
 </section></section>
 <section><section id="ants-optimizes-mathematically-well-defined-objective-functions-guided-by-prior-knowledge" class="titleslide slide level1"><h1><em>ANTs</em> optimizes mathematically <br /> well-defined <br /><span style="color:red;">objective functions</span> <br />guided by <br /> <span style="color:red;">prior knowledge</span> …</h1></section></section>
@@ -193,6 +201,7 @@ code > span.er { color: #c3bf9f; }
 <li class="fragment"><p>Segmentation <span class="math">\(=\)</span> labeling tissue or anatomy in images, usually automated (e.g. K-means)</p></li>
 <li class="fragment"><p><span style="color:grey;"> Multivariate <span class="math">\(=\)</span> using many voxels or measurements at once (e.g. PCA, <span class="math">\(p &gt;&gt; n\)</span> ridge regression)</span></p></li>
 <li class="fragment"><p>Multiple modality <span class="math">\(=\)</span> using many modalities at once (e.g. DTI and T1 and BOLD)</p></li>
+<li class="fragment"><p>MALF: multi-atlas label fusion - using anatomical dictionaries to label new data</p></li>
 <li class="fragment"><p>Solutions to challenging statistical image processing problems usually need elements from each of the above</p></li>
 </ul>
 </section><section id="the-technical-framework" class="slide level2">
@@ -388,7 +397,7 @@ mat&lt;-<span class="kw">imageListToMatrix</span>( imglist, mask )
 DX&lt;-<span class="kw">factor</span>( <span class="kw">c</span>( <span class="kw">rep</span>(<span class="dv">0</span>,simnum), <span class="kw">rep</span>(<span class="dv">1</span>,simnum) ) )
 mylmresults&lt;-<span class="kw">bigLMStats</span>( <span class="kw">lm</span>( mat ~<span class="st"> </span>DX ) )
 qvals&lt;-<span class="kw">p.adjust</span>( mylmresults$pval.model ) </code></pre>
-<p>The minimum q-value is 4.9895 × 10<sup>-6</sup> …</p>
+<p>The minimum q-value is 1.0706 × 10<sup>-5</sup> …</p>
 </section><section id="visualize-the-histograms-of-effects" class="slide level2">
 <h1>Visualize the histograms of effects</h1>
 <pre class="sourceCode r"><code class="sourceCode r">whichvox&lt;-qvals &lt;<span class="st"> </span><span class="fl">1.e-2</span>

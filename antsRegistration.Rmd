@@ -49,6 +49,10 @@ This talk is online at [http://stnava.github.io/ANTsRegistrationTalk/](http://st
 
 ![](./figures/galton.png)
 
+* Francis Galton: Can we see criminality in the face?
+
+* (maybe he should have used ANTs?)
+
 # we *can* compare<br /> <span style="color:red;">apples</span> and <span style="color:orange;">oranges</span> ... 
 
 ## apples and oranges ... 
@@ -69,6 +73,8 @@ initialization
 
 <span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> deformable registration - i.e. registration on color
 
+## ANTs is *open* to different image types, multiple modalities, anatomical regions, segmentation priors, etc.
+
 ## ANTs & Neuroscience
 
 We need statistical image analysis <br />at several scales in modern neuroscience
@@ -77,14 +83,20 @@ We need statistical image analysis <br />at several scales in modern neuroscienc
 
 * Micro:  high-resolution post-mortem MRI links with in vivo MRI
 
-* Nano: neuron recostrunction
+* Nano: neuron reconstruction ...
 
-* ANTs and ITK are uniquely positioned to address these needs
+* Solutions that are consistent across these scales have the potential
+to build multi-scale feature sets or templates and provide new
+insights into brain structure and function
 
-* currently lack "off the shelf" solutions ... but the core is there
+* E.g. Parcellation constraints based on histology, tractography, function ...
 
-* These methods have the potential to link data across these scales 
-and provide new insights into brain structure and function
+* Statistical definitions of anatomy/pathology?  
+
+* Reinvention of these solutions within each lab ... can we mitigate this?
+
+* Reduce, reuse, recycle ...
+
 
 # *ANTs* optimizes mathematically <br /> well-defined  <br /><span style="color:red;">objective functions</span>  <br />guided by <br /> <span style="color:red;">prior knowledge</span>  ...
 
@@ -161,6 +173,8 @@ Diffeomorphisms $=$ differentiable map with differentiable inverse (e.g. "silly 
 * <span style="color:grey;"> Multivariate $=$ using many voxels or measurements at once (e.g. PCA, $p >> n$ ridge regression)</span>
 
 * Multiple modality $=$ using many modalities at once (e.g. DTI and T1 and BOLD)
+
+* MALF: multi-atlas label fusion - using anatomical dictionaries to label new data
 
 * Solutions to challenging statistical image processing problems usually need elements from each of the above 
 
