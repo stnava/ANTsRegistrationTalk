@@ -77,7 +77,7 @@ We need statistical image analysis <br />at several scales in modern neuroscienc
 
 * ANTs and ITK are uniquely positioned to address these needs
 
-* ... currently not "off the shelf" solutions ... but the core is there
+* currently lack "off the shelf" solutions ... but the core is there
 
 * These methods have the potential to link data across these scales 
 and provide new insights into brain structure and function
