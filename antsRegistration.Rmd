@@ -67,7 +67,7 @@ initialization
 
 ## ANTs & Neuroscience
 
-We need statistical image analysis at several scales in modern neuroscience
+We need statistical image analysis <br />at several scales in modern neuroscience
 
 * Macro: *in vivo* structural and functional MRI
 
@@ -76,6 +76,8 @@ We need statistical image analysis at several scales in modern neuroscience
 * Nano: neuron recostrunction
 
 * ANTs and ITK are uniquely positioned to address these needs
+
+* ... currently not "off the shelf" solutions ... but the core is there
 
 * These methods have the potential to link data across these scales 
 and provide new insights into brain structure and function
