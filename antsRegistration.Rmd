@@ -95,6 +95,8 @@ and provide new insights into brain structure and function
 
 ![](./figures/lineage.jpg)
 
+References: @Horn1981, @Gee1993, @Grenander1993, @Thompson2001, @Miller2002, @Shen2002, @Arnold2014, @Thirion1998, @Rueckert1999, @Fischl2012, @Ashburner2012
+
 ## Diffeomorphisms
 
 <div align="center"><img width="1433" src="./figures/sillyputty.png" frameborder="0"></img></div>
