@@ -453,7 +453,7 @@ plotANTsImage(img,functional=list(betas),threshold=thresh,
 
 ## Network visualization
 see `?plotBasicNetwork`
-```{r network,results='hide',warning=FALSE,echo=FALSE,message=FALSE}
+```{r network,results='hide',warning=FALSE,echo=FALSE,message=FALSE,eval=FALSE}
 ofn<-paste(figpath,'network',sep='')
 ofnpng<-paste(ofn,'.png',sep='')
        mnit<-getANTsRData("mni")
