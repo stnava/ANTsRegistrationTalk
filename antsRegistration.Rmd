@@ -352,6 +352,11 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 [chimpanzees](http://www.ncbi.nlm.nih.gov/pubmed/23516289)
 
 
+## Statistics in deformation space
+
+[AIBS movie](http://www.youtube.com/embed/8GgHG-rApiE)
+
+
 ## Average Republican and Democratic congressmen
 
 <div align="center"><img src="figures/democrat_left_repub_right.png" frameborder="0"></img></div>
@@ -388,6 +393,11 @@ from [miykael](http://miykael.github.io/nipype-beginner-s-guide/ANTS.html)
 
 ## Scientific Data 2014
 ![](./figures/ptbp2.png)
+
+## "Network" of predictors for age
+
+...
+
 
 ## ITK+ANTs+R = <span style="color:red;">*ANTsR*</span>
 
